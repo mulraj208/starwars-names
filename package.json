@@ -46,7 +46,8 @@
     "husky": "^8.0.3",
     "mocha": "3.0.1",
     "semantic-release": "^23.0.2",
-    "semantic-release-jira-notes": "3.0.0"
+    "semantic-release-jira-notes": "3.0.0",
+    "semantic-release-jira-releases": "0.7.2"
   },
   "babel": {
     "presets": [
