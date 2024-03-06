@@ -11,3 +11,5 @@
 ### fix(button): missing styles for focus outline
 
 ### feat(styles): add drawer styles
+
+### feat(styles): add tooltip styles
