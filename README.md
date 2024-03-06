@@ -17,3 +17,5 @@
 ### feat(styles): add carousel styles
 
 ### feat(styles): add home-page styles
+
+### feat(styles): add PDP-page styles
