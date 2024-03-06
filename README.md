@@ -15,3 +15,5 @@
 ### feat(styles): add tooltip styles
 
 ### feat(styles): add carousel styles
+
+### feat(styles): add home-page styles
