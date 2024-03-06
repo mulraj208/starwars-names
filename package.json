@@ -1,14 +1,21 @@
 {
   "name": "starwars-names-cli",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mulraj208/starwars-names.git"
+    "url": "https://github.com/mulraj208/starwars-names.git"
   },
   "keywords": [],
   "author": "Mulraj Gupta <mulrajgupta208@gmail.com>",
@@ -19,5 +26,10 @@
   "homepage": "https://github.com/mulraj208/starwars-names#readme",
   "dependencies": {
     "unique-random-array": "1.0.0"
+  },
+  "devDependencies": {
+    "commitizen": "4.3.0",
+    "cz-conventional-changelog": "3.3.0",
+    "semantic-release": "^23.0.2"
   }
 }
