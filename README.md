@@ -7,3 +7,5 @@
 ### refactor(styles): of heading, popover, and text according to documentation
 
 ### fix(footer): wrong size of Newsletter button
+
+### fix(button): missing styles for focus outline
