@@ -3,6 +3,7 @@ module.exports = {
     "plugins": [
         "@semantic-release/commit-analyzer",
         ["semantic-release-jira-releases", {
+            "projectId": "PKS",
             "jiraHost": "aiopsgroup.atlassian.net",
             "ticketPrefixes": ["PKS"]
         }],
