@@ -19,3 +19,5 @@
 ### feat(styles): add home-page styles
 
 ### feat(styles): add PDP-page styles
+
+### feat(styles): add checkout page styles
