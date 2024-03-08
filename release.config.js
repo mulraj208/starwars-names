@@ -15,7 +15,15 @@ module.exports = {
                 }
             }
         ],
-        "@semantic-release/release-notes-generator",
+        ["@semantic-release/release-notes-generator",
+            {
+                "preset": "angular",
+                "parserOpts": {
+                    headerPattern: /^([A-Z]+-\d+) (\w*)(?:\(([^)]*)\))?: (.*)$/,
+                    headerCorrespondence: ['jiraId', 'type', 'scope', 'subject']
+                }
+            }
+        ],
         "@semantic-release/git",
         "@semantic-release/github"
     ],
