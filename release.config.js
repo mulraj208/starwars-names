@@ -1,27 +1,27 @@
+const commonConfig = {
+    "preset": "angular",
+    "parserOpts": {
+        headerPattern: /^([A-Z]+-\d+) (\w*)(?:\(([^)]*)\))?: (.*)$/,
+        headerCorrespondence: ['jiraId', 'type', 'scope', 'subject']
+    }
+}
+
 module.exports = {
     branches: ['main'],
     "plugins": [
         ["@semantic-release/commit-analyzer",
             {
-                "preset": "angular",
+                ...commonConfig,
                 "releaseRules": [
                     {"type": "docs", "release": "patch"},
                     {"type": "refactor", "release": "patch"},
                     {"type": "style", "release": "patch"}
-                ],
-                "parserOpts": {
-                    headerPattern: /^([A-Z]+-\d+) (\w*)(?:\(([^)]*)\))?: (.*)$/,
-                    headerCorrespondence: ['jiraId', 'type', 'scope', 'subject']
-                }
+                ]
             }
         ],
         ["@semantic-release/release-notes-generator",
             {
-                "preset": "angular",
-                "parserOpts": {
-                    headerPattern: /^([A-Z]+-\d+) (\w*)(?:\(([^)]*)\))?: (.*)$/,
-                    headerCorrespondence: ['jiraId', 'type', 'scope', 'subject']
-                }
+                ...commonConfig
             }
         ],
         "@semantic-release/git",
