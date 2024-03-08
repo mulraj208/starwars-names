@@ -15,6 +15,10 @@ module.exports = {
                 }
             }
         ],
+        ["semantic-release-jira-notes", {
+            "jiraHost": "aiopsgroup.atlassian.net",
+            "ticketPrefixes": ["PKS"]
+        }],
         "@semantic-release/git",
         "@semantic-release/github"
     ],

@@ -23,3 +23,5 @@
 ### feat(styles): add checkout page styles
 
 ### feat(styles): add test page styles
+
+### feat: add test2 page styles
