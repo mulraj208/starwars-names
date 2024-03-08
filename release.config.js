@@ -8,5 +8,13 @@ module.exports = {
         }],
         "@semantic-release/git",
         "@semantic-release/github",
+        [
+            'cz-conventional-changelog-for-jira',
+            {
+                "jiraLocation": "pre-type",
+                "skipScope": false,
+                "CZ_JIRA_PREFIX": "PKS"
+            }
+        ]
     ],
 }

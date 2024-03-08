@@ -21,3 +21,5 @@
 ### feat(styles): add PDP-page styles
 
 ### feat(styles): add checkout page styles
+
+### feat(styles): add test page styles
