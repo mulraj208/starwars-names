@@ -38,7 +38,7 @@ module.exports = {
                         "\n" +
                         "{{~!-- Jira link --}}\n" +
                         "{{~#if jiraId}}\n" +
-                        "    &nbsp;(<a href=\"{{ jiraId }}\">{{~jiraId}}</a>) {{@root.host}}\n" +
+                        "    &nbsp;(<a href=\"{{@root.host}}\">{{~jiraId}}</a>)\n" +
                         "{{~/if}}\n" +
                         "\n" +
                         "{{~!-- commit references --}}\n" +
