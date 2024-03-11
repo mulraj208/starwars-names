@@ -25,10 +25,15 @@ module.exports = {
                 host: 'https://aiopsgroup.atlassian.net',
                 issue: 'PKS',
                 "writerOpts": {
-                    "transform": function(releaseNotes) {
-                        console.log(releaseNotes)
-                        releaseNotes += '\n\n---\n\nCustom footer added by transform function';
-                        return releaseNotes;
+                    "transform": function (releaseNotes) {
+                        const {jiraId, subject} = releaseNotes
+                        const modifiedSubject = `${subject} ${jiraId}`
+                        console.log({jiraId, subject, modifiedSubject})
+
+                        return {
+                            ...releaseNotes,
+                            subject: modifiedSubject
+                        };
                     }
                 }
             }
