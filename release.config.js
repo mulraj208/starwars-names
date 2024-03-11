@@ -27,7 +27,7 @@ module.exports = {
                 "writerOpts": {
                     "transform": function (releaseNotes) {
                         const {jiraId, subject} = releaseNotes
-                        const modifiedSubject = `${subject} ${jiraId}`
+                        const modifiedSubject = `${jiraId} ${subject}`
                         console.log({jiraId, subject, modifiedSubject, releaseNotes})
 
                         return {
