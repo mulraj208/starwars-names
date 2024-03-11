@@ -50,7 +50,7 @@ module.exports = {
                         "\n" +
                         "{{~!-- Jira link --}}\n" +
                         "{{#if jiraId}}\n" +
-                        "    &nbsp;(<a href=\"{{@root.host}}/{{jiraId}}\">{{jiraId}}</a>)\n" +
+                        "    &nbsp;(<a href=\"//aiopsgroup.atlassian.net/browse/{{jiraId}}\">{{jiraId}}</a>)\n" +
                         "{{/if}}\n" +
                         "\n" +
                         "{{~!-- commit references --}}\n" +
@@ -88,8 +88,7 @@ module.exports = {
                         "        {{~this.repository}}#{{this.issue}}\n" +
                         "    {{~/if}}{{/each}}\n" +
                         "{{~/if}}\n"
-                },
-                jiraHost: "https://aiopsgroup.atlassian.net/browse"
+                }
             }
         ],
         "@semantic-release/git",
