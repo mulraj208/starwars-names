@@ -21,7 +21,16 @@ module.exports = {
         ],
         ["@semantic-release/release-notes-generator",
             {
-                ...commonConfig
+                ...commonConfig,
+                host: 'https://aiopsgroup.atlassian.net',
+                issue: 'PKS',
+                "writerOpts": {
+                    "transform": function(releaseNotes) {
+                        console.log(releaseNotes)
+                        releaseNotes += '\n\n---\n\nCustom footer added by transform function';
+                        return releaseNotes;
+                    }
+                }
             }
         ],
         "@semantic-release/git",
