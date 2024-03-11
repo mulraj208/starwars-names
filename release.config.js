@@ -25,15 +25,15 @@ module.exports = {
                 "writerOpts": {
                     "commitPartial": "*{{#if scope}} **{{scope}}:**\n" +
                         "{{~/if}} {{#if subject}}\n" +
-                        "  {{~subject}}\n" +
+                        "    {{~subject}}\n" +
                         "{{~else}}\n" +
-                        "  {{~header}}\n" +
+                        "    {{~header}}\n" +
                         "{{~/if}}\n" +
                         "\n" +
                         "{{~!-- commit link --}}{{~#if hash}} {{#if @root.linkReferences~}}\n" +
-                        "  ([{{shortHash}}]({{commitUrlFormat}}))\n" +
+                        "    ([{{shortHash}}]({{commitUrlFormat}}))\n" +
                         "{{~else}}\n" +
-                        "  {{~shortHash}}\n" +
+                        "    {{~shortHash}}\n" +
                         "{{~/if}}{{~/if}}\n" +
                         "\n" +
                         "{{~!-- Jira link --}}\n" +
@@ -43,19 +43,19 @@ module.exports = {
                         "\n" +
                         "{{~!-- commit references --}}\n" +
                         "{{~#if references~}}\n" +
-                        "  , closes\n" +
-                        "  {{~#each references}} {{#if @root.linkReferences~}}\n" +
-                        "    [\n" +
-                        "    {{~#if this.owner}}\n" +
-                        "      {{~this.owner}}/\n" +
-                        "    {{~/if}}\n" +
-                        "    {{~this.repository}}{{this.prefix}}{{this.issue}}]({{issueUrlFormat}})\n" +
-                        "  {{~else}}\n" +
-                        "    {{~#if this.owner}}\n" +
-                        "      {{~this.owner}}/\n" +
-                        "    {{~/if}}\n" +
-                        "    {{~this.repository}}{{this.prefix}}{{this.issue}}\n" +
-                        "  {{~/if}}{{/each}}\n" +
+                        "    , closes\n" +
+                        "    {{~#each references}} {{#if @root.linkReferences~}}\n" +
+                        "        [\n" +
+                        "        {{~#if this.owner}}\n" +
+                        "            {{~this.owner}}/\n" +
+                        "        {{~/if}}\n" +
+                        "        {{~this.repository}}{{this.prefix}}{{this.issue}}]({{issueUrlFormat}})\n" +
+                        "    {{~else}}\n" +
+                        "        {{~#if this.owner}}\n" +
+                        "            {{~this.owner}}/\n" +
+                        "        {{~/if}}\n" +
+                        "        {{~this.repository}}{{this.prefix}}{{this.issue}}\n" +
+                        "    {{~/if}}{{/each}}\n" +
                         "{{~/if}}\n" +
                         "\n"
                 },
