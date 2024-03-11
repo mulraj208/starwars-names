@@ -21,7 +21,10 @@ module.exports = {
         ],
         ["@semantic-release/release-notes-generator",
             {
-                ...commonConfig
+                ...commonConfig,
+                "writerOpts": {
+                    "commitPartial": "./templates/commit.hbs"
+                }
             }
         ],
         "@semantic-release/git",
