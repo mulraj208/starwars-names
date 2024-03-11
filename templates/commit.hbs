@@ -1,6 +1,6 @@
 *{{#if scope}} **{{scope}}:**
 {{~/if}} {{#if subject}}
-  {{~subject}} PKS-111
+  {{~subject}}
 {{~else}}
   {{~header}}
 {{~/if}}
@@ -10,6 +10,11 @@
 {{~else}}
   {{~shortHash}}
 {{~/if}}{{~/if}}
+
+{{~!-- Jira link --}}
+{{~#if jiraId}}
+  {{~jiraId}}
+{{~/if}}
 
 {{~!-- commit references --}}
 {{~#if references~}}

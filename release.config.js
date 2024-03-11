@@ -23,7 +23,41 @@ module.exports = {
             {
                 ...commonConfig,
                 "writerOpts": {
-                    "commitPartial": "*{{#if scope}} **{{scope}}:**\n                        {{~/if}} {{#if subject}}\n                          {{~subject}} PKS-111\n                        {{~else}}\n                          {{~header}}\n                        {{~/if}}\n                        \n                        {{~!-- commit link --}}{{~#if hash}} {{#if @root.linkReferences~}}\n                          ([{{shortHash}}]({{commitUrlFormat}}))\n                        {{~else}}\n                          {{~shortHash}}\n                        {{~/if}}{{~/if}}\n                        \n                        {{~!-- commit references --}}\n                        {{~#if references~}}\n                          , closes\n                          {{~#each references}} {{#if @root.linkReferences~}}\n                            [\n                            {{~#if this.owner}}\n                              {{~this.owner}}/\n                            {{~/if}}\n                            {{~this.repository}}{{this.prefix}}{{this.issue}}]({{issueUrlFormat}})\n                          {{~else}}\n                            {{~#if this.owner}}\n                              {{~this.owner}}/\n                            {{~/if}}\n                            {{~this.repository}}{{this.prefix}}{{this.issue}}\n                          {{~/if}}{{/each}}\n                        {{~/if}}"
+                    "commitPartial": "*{{#if scope}} **{{scope}}:**\n" +
+                        "{{~/if}} {{#if subject}}\n" +
+                        "  {{~subject}}\n" +
+                        "{{~else}}\n" +
+                        "  {{~header}}\n" +
+                        "{{~/if}}\n" +
+                        "\n" +
+                        "{{~!-- commit link --}}{{~#if hash}} {{#if @root.linkReferences~}}\n" +
+                        "  ([{{shortHash}}]({{commitUrlFormat}}))\n" +
+                        "{{~else}}\n" +
+                        "  {{~shortHash}}\n" +
+                        "{{~/if}}{{~/if}}\n" +
+                        "\n" +
+                        "{{~!-- Jira link --}}\n" +
+                        "{{~#if jiraId}}\n" +
+                        "  {{~jiraId}}\n" +
+                        "{{~/if}}\n" +
+                        "\n" +
+                        "{{~!-- commit references --}}\n" +
+                        "{{~#if references~}}\n" +
+                        "  , closes\n" +
+                        "  {{~#each references}} {{#if @root.linkReferences~}}\n" +
+                        "    [\n" +
+                        "    {{~#if this.owner}}\n" +
+                        "      {{~this.owner}}/\n" +
+                        "    {{~/if}}\n" +
+                        "    {{~this.repository}}{{this.prefix}}{{this.issue}}]({{issueUrlFormat}})\n" +
+                        "  {{~else}}\n" +
+                        "    {{~#if this.owner}}\n" +
+                        "      {{~this.owner}}/\n" +
+                        "    {{~/if}}\n" +
+                        "    {{~this.repository}}{{this.prefix}}{{this.issue}}\n" +
+                        "  {{~/if}}{{/each}}\n" +
+                        "{{~/if}}\n" +
+                        "\n"
                 }
             }
         ],
