@@ -89,7 +89,7 @@ module.exports = {
                         "    {{~/if}}{{/each}}\n" +
                         "{{~/if}}\n"
                 },
-                host: "https://aiopsgroup.atlassian.net/browse"
+                jiraHost: "https://aiopsgroup.atlassian.net/browse"
             }
         ],
         "@semantic-release/git",
