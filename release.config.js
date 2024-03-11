@@ -21,7 +21,75 @@ module.exports = {
         ],
         ["@semantic-release/release-notes-generator",
             {
-                ...commonConfig
+                ...commonConfig,
+                "writerOpts": {
+                    "commitPartial": "*{{#if scope}} **{{scope}}:**\n" +
+                        "{{~/if}} {{#if subject}}\n" +
+                        "    {{~subject}}\n" +
+                        "{{~else}}\n" +
+                        "    {{~header}}\n" +
+                        "{{~/if}}\n" +
+                        "\n" +
+                        "{{~!-- commit link --}} {{#if @root.linkReferences~}}\n" +
+                        "    ([{{shortHash}}](\n" +
+                        "    {{~#if @root.repository}}\n" +
+                        "        {{~#if @root.host}}\n" +
+                        "            {{~@root.host}}/\n" +
+                        "        {{~/if}}\n" +
+                        "        {{~#if @root.owner}}\n" +
+                        "            {{~@root.owner}}/\n" +
+                        "        {{~/if}}\n" +
+                        "        {{~@root.repository}}\n" +
+                        "    {{~else}}\n" +
+                        "        {{~@root.repoUrl}}\n" +
+                        "    {{~/if}}/\n" +
+                        "    {{~@root.commit}}/{{hash}}))\n" +
+                        "{{~else}}\n" +
+                        "    {{~shortHash}}\n" +
+                        "{{~/if}}\n" +
+                        "\n" +
+                        "{{~!-- Jira link --}}\n" +
+                        "{{#if jiraId}}\n" +
+                        "    &nbsp;(<a href=\"{{@root.host}}/{{jiraId}}\">{{jiraId}}</a>)\n" +
+                        "{{/if}}\n" +
+                        "\n" +
+                        "{{~!-- commit references --}}\n" +
+                        "{{~#if references~}}\n" +
+                        "    , closes\n" +
+                        "    {{~#each references}} {{#if @root.linkReferences~}}\n" +
+                        "        [\n" +
+                        "        {{~#if this.owner}}\n" +
+                        "            {{~this.owner}}/\n" +
+                        "        {{~/if}}\n" +
+                        "        {{~this.repository}}#{{this.issue}}](\n" +
+                        "        {{~#if @root.repository}}\n" +
+                        "            {{~#if @root.host}}\n" +
+                        "                {{~@root.host}}/\n" +
+                        "            {{~/if}}\n" +
+                        "            {{~#if this.repository}}\n" +
+                        "                {{~#if this.owner}}\n" +
+                        "                    {{~this.owner}}/\n" +
+                        "                {{~/if}}\n" +
+                        "                {{~this.repository}}\n" +
+                        "            {{~else}}\n" +
+                        "                {{~#if @root.owner}}\n" +
+                        "                    {{~@root.owner}}/\n" +
+                        "                {{~/if}}\n" +
+                        "                {{~@root.repository}}\n" +
+                        "            {{~/if}}\n" +
+                        "        {{~else}}\n" +
+                        "            {{~@root.repoUrl}}\n" +
+                        "        {{~/if}}/\n" +
+                        "        {{~@root.issue}}/{{this.issue}})\n" +
+                        "    {{~else}}\n" +
+                        "        {{~#if this.owner}}\n" +
+                        "            {{~this.owner}}/\n" +
+                        "        {{~/if}}\n" +
+                        "        {{~this.repository}}#{{this.issue}}\n" +
+                        "    {{~/if}}{{/each}}\n" +
+                        "{{~/if}}\n"
+                },
+                host: "https://aiopsgroup.atlassian.net/browse"
             }
         ],
         "@semantic-release/git",
