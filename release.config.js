@@ -22,19 +22,8 @@ module.exports = {
         ["@semantic-release/release-notes-generator",
             {
                 ...commonConfig,
-                host: 'https://aiopsgroup.atlassian.net',
-                issue: 'PKS-',
                 "writerOpts": {
-                    "transform": function (releaseNotes) {
-                        const {jiraId, subject} = releaseNotes
-                        const modifiedSubject = `${jiraId} ${subject}`
-                        console.log({jiraId, subject, modifiedSubject, releaseNotes})
-
-                        return {
-                            ...releaseNotes,
-                            subject: modifiedSubject
-                        };
-                    }
+                    "commitPartial": "templates/commit.hbs"
                 }
             }
         ],
