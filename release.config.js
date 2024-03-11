@@ -28,7 +28,7 @@ module.exports = {
                     "transform": function (releaseNotes) {
                         const {jiraId, subject} = releaseNotes
                         const modifiedSubject = `${subject} ${jiraId}`
-                        console.log({jiraId, subject, modifiedSubject})
+                        console.log({jiraId, subject, modifiedSubject, releaseNotes})
 
                         return {
                             ...releaseNotes,
