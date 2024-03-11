@@ -8,7 +8,7 @@
 
 ### fix(footer): wrong size of Newsletter button
 
-### fix(button): missing styles for focus outline
+### fix(button): missing styles for focus outline 
 
 ### feat(styles): add drawer styles 
 
