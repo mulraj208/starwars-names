@@ -12,7 +12,7 @@
 
 ### feat(styles): add drawer styles 
 
-### feat(styles): add tooltip styles
+### feat(styles): add tooltip styles 
 
 ### feat(styles): add carousel styles
 
