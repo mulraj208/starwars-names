@@ -1,5 +1,5 @@
 const commonConfig = {
-    "preset": "angular",
+    "preset": "conventionalcommits",
     "parserOpts": {
         headerPattern: /^([A-Z]+-\d+) (\w*)(?:\(([^)]*)\))?: (.*)$/,
         headerCorrespondence: ['jiraId', 'type', 'scope', 'subject']
@@ -23,7 +23,7 @@ module.exports = {
             {
                 ...commonConfig,
                 host: 'https://aiopsgroup.atlassian.net',
-                issue: 'PKS',
+                issue: 'PKS-',
                 "writerOpts": {
                     "transform": function (releaseNotes) {
                         const {jiraId, subject} = releaseNotes
