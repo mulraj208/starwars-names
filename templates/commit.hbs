@@ -12,9 +12,9 @@
 {{~/if}}{{~/if}}
 
 {{~!-- Jira link --}}
-{{~#if jiraId}}
-    &nbsp;(<a href="{{@root.host}}">{{~jiraId}}</a>)
-{{~/if}}
+{{#if jiraId}}
+    &nbsp;(<a href="{{@root.host}}/{{jiraId}}">{{jiraId}}</a>)
+{{/if}}
 
 {{~!-- commit references --}}
 {{~#if references~}}
