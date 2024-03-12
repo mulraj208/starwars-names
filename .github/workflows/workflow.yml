@@ -8,7 +8,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '20.8.1'
-      - run: npm ci
+      - run: npm ci --ignore-scripts
       - run: npm test
       - name: Release
         env:
