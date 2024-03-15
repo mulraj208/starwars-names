@@ -6,6 +6,13 @@ const commonConfig = {
     }
 }
 
+// conventionalcommits
+
+// PKS-18 chore: add missing commit types for commit messages
+// jiraID committype: commit message
+
+
+
 module.exports = {
     branches: ['main'],
     "plugins": [
@@ -23,6 +30,11 @@ module.exports = {
             {
                 ...commonConfig,
                 "writerOpts": {
+                    "transform": function (releaseNotes) {
+                        console.log({ releaseNotes })
+
+                        return releaseNotes;
+                    },
                     "commitPartial": "*{{#if scope}} **{{scope}}:**\n" +
                         "{{~/if}} {{#if subject}}\n" +
                         "    {{~subject}}\n" +
