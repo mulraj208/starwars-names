@@ -1,3 +1,10 @@
+## [1.42.0](https://github.com/mulraj208/starwars-names/compare/v1.41.0...v1.42.0) (2024-03-15)
+
+
+### feat
+
+* add test13 page styles ([](https://github.com/mulraj208/starwars-names/commit/59f94d9b6bd79d1a7640ea5626c1cafddf0012ad))    &nbsp;(<a href="//aiopsgroup.atlassian.net/browse/PKS-123">PKS-123</a>)
+
 ## [1.41.0](https://github.com/mulraj208/starwars-names/compare/v1.40.0...v1.41.0) (2024-03-12)
 
 
