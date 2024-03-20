@@ -1,3 +1,12 @@
+## [1.43.0](https://github.com/mulraj208/starwars-names/compare/v1.42.0...v1.43.0) (2024-03-20)
+
+
+### feat
+
+* add test30 page styles ([](https://github.com/mulraj208/starwars-names/commit/95e39ac37183da56d3b5deb0a393396211b1484c))    &nbsp;(<a href="//aiopsgroup.atlassian.net/browse/PKS-18">PKS-18</a>)
+* add test30 page styles ([](https://github.com/mulraj208/starwars-names/commit/575564103bc4deb14b2b83d408a922809e12dfd1))    &nbsp;(<a href="//aiopsgroup.atlassian.net/browse/PKS-18">PKS-18</a>)
+* add test30 page styles ([](https://github.com/mulraj208/starwars-names/commit/deaca5d085d49b45d429bd736f728504ce7c94ab))    &nbsp;(<a href="//aiopsgroup.atlassian.net/browse/PKS-18">PKS-18</a>)
+
 ## [1.42.0](https://github.com/mulraj208/starwars-names/compare/v1.41.0...v1.42.0) (2024-03-15)
 
 
