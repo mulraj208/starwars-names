@@ -1,3 +1,10 @@
+## [1.44.0](https://github.com/mulraj208/starwars-names/compare/v1.43.0...v1.44.0) (2025-05-09)
+
+
+### feat
+
+* remove semantic release ([](https://github.com/mulraj208/starwars-names/commit/cb9f993026bc6061a30c728d614c8c1747f358c3))    &nbsp;(<a href="//aiopsgroup.atlassian.net/browse/PKS-18">PKS-18</a>)
+
 ## [1.43.0](https://github.com/mulraj208/starwars-names/compare/v1.42.0...v1.43.0) (2024-03-20)
 
 
