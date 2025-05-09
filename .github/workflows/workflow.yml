@@ -10,6 +10,12 @@ jobs:
           node-version: '20.19.1'
       - run: npm ci
       - run: npm test
+
+      - name: Set Git user
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
