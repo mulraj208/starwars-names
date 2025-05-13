@@ -2,6 +2,10 @@
 
 ## 0.0.0 (2025-05-13)
 
+* conventional-commits-parser.config.js([](https://github.com/mulraj208/starwars-names/commit/defa351))    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18)) test
+
+## 0.0.0 (2025-05-13)
+
 * add test 30 page styles([](https://github.com/mulraj208/starwars-names/commit/09727ad))    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
 
 ## 0.0.0-development (2025-05-13)
