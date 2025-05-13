@@ -48,7 +48,7 @@ module.exports = {
       '\n' +
       '{{~!-- commit link --}}\n' +
       '{{#if @root.linkReferences~}}\n' +
-      '       ([{{shortHash}}](\n' +
+      '       ([{{shortHash}}] short-hash (\n' +
       '    {{~#if @root.repository}}\n' +
       '        {{~#if @root.host}}\n' +
       '            {{~@root.host}}/\n' +
@@ -60,7 +60,7 @@ module.exports = {
       '    {{~else}}\n' +
       '        {{~@root.repoUrl}}\n' +
       '    {{~/if}}/\n' +
-      '    {{~@root.commit}}/{{hash}}))\n' +
+      '    {{~@root.commit}}/{{hash}} hash ))\n' +
       '{{~else}}\n' +
       '    {{~shortHash}}\n' +
       '{{~/if}}\n' +
