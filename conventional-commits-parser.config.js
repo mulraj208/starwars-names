@@ -69,7 +69,7 @@ module.exports = {
       '{{#if jiraId}}\n' +
       '    ([{{ jiraId }}](' +
       jiraUrl +
-      '{{ jiraId }}))\n' +
+      '{{ jiraId }})) test \n' +
       '{{/if}}\n' +
       '\n' +
       '{{~!-- commit references --}}\n' +
