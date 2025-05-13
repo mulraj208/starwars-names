@@ -2,6 +2,10 @@
 
 ## 0.0.0 (2025-05-13)
 
+* playing around([] short-hash (https://github.com/mulraj208/starwars-names/commit/40274fe hash ))    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18)) test
+
+## 0.0.0 (2025-05-13)
+
 * conventional-commits-parser.config.js([](https://github.com/mulraj208/starwars-names/commit/defa351))    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18)) test
 
 ## 0.0.0 (2025-05-13)
