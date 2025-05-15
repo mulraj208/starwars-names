@@ -39,11 +39,11 @@ module.exports = {
     groupBy: 'type',
     noteGroupsSort: 'scope',
     helpers: {
-      log: (ctx) => {
+      tlog: (ctx) => {
         console.log('Handlebars log:', JSON.stringify(ctx, null, 2));
         return '';
       },
-      tlog: (ctx) => {
+      log: (ctx) => {
         console.log('Handlebars log:', JSON.stringify(ctx, null, 2));
         return '';
       },
