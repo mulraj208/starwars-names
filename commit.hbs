@@ -1,16 +1,6 @@
 * {{#if scope}}**{{scope}}:** {{/if}}{{subject}}
 
-[{{shortHash}}](
-{{#if @root.repository}}
-    {{#if @root.host}}{{@root.host}}/{{/if}}
-    {{#if @root.owner}}{{@root.owner}}/{{/if}}
-    {{@root.repository}}/commit/{{hash}}
-{{else}}
-    {{@root.repoUrl}}/commit/{{hash}}
-{{/if}}
-)
-
-{{@root.packageData.repository}}/commit/{{hash}}
+[{{shortHash hash}}]({{commitUrl}})
 
 {{#if jiraLinkUrl}}
     ([{{jiraId}}]({{jiraLinkUrl}}))

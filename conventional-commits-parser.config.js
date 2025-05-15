@@ -31,8 +31,15 @@ module.exports = {
     headerPattern: /^([A-Z]+-\d+) (\w*)(?:\(([^)]*)\))?: (.*)$/,
     headerCorrespondence: ['jiraId', 'type', 'scope', 'subject'],
     transform: (commit) => {
+      const { root, hash } = commit;
+
       // Add shortHash from full hash
       commit.shortHash = commit.hash?.substring(0, 7);
+
+      // Build commitUrl once during parsing
+      commit.commitUrl = root?.repository
+        ? `${root.host ? root.host + '/' : ''}${root.owner ? root.owner + '/' : ''}${root.repository}/commit/${hash}`
+        : `${root?.repoUrl || ''}/commit/${hash}`;
 
       // Add jiraLinkUrl if jiraId exists
       if (commit.jiraId) {
