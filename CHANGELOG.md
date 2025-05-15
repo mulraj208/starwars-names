@@ -3,6 +3,11 @@
 ## 0.0.0 (2025-05-15)
 
 * 
+use template string([ab9e6e5](https://github.com/mulraj208/starwars-names/commit/ab9e6e5))          ([PKS-20](https://aiopsgroup.atlassian.net/browse/PKS-20))
+
+## 0.0.0 (2025-05-15)
+
+* 
 use template string([72350c7](https://github.com/mulraj208/starwars-names/commit/72350c7))          ([PKS-20](https://aiopsgroup.atlassian.net/browse/PKS-20))
 
 ## 0.0.0 (2025-05-15)
