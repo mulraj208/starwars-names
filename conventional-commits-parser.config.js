@@ -43,6 +43,10 @@ module.exports = {
         console.log('Handlebars log:', JSON.stringify(ctx, null, 2));
         return '';
       },
+      tlog: (ctx) => {
+        console.log('Handlebars log:', JSON.stringify(ctx, null, 2));
+        return '';
+      },
       shortHash: (hash) => {
         console.log(hash);
         return hash?.substring(0, 7);
