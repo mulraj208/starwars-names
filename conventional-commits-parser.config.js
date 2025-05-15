@@ -43,8 +43,12 @@ module.exports = {
         console.log('Handlebars log:', JSON.stringify(ctx, null, 2));
         return '';
       },
-      shortHash: (hash) => hash?.substring(0, 7),
-      jiraLink: (id) => `https://your-jira-url/browse/${id}`
+      shortHash: (hash) => {
+        return hash?.substring(0, 7);
+      },
+      jiraLink: (id) => {
+        return `https://your-jira-url/browse/${id}`;
+      }
     },
     commitPartial: commitTemplate
   }
