@@ -46,6 +46,8 @@ module.exports = {
         commit.jiraLinkUrl = `https://your-jira-url/browse/${commit.jiraId}`;
       }
 
+      console.log('@#@#@#@#@#@#@', commit);
+
       return commit;
     }
   },
