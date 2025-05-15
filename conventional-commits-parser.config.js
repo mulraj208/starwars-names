@@ -1,7 +1,6 @@
 // Documentation for the options
 // https://github.com/release-it/conventional-changelog?tab=readme-ov-file#parseropts
-const fs = require('fs');
-const commitTemplate = fs.readFileSync('commit.hbs').toString();
+const jiraUrl = 'https://aiopsgroup.atlassian.net/browse/'
 
 module.exports = {
   preset: {
@@ -29,7 +28,7 @@ module.exports = {
   },
   parserOpts: {
     headerPattern: /^([A-Z]+-\d+) (\w*)(?:\(([^)]*)\))?: (.*)$/,
-    headerCorrespondence: ['jiraId', 'type', 'scope', 'subject'],
+    headerCorrespondence: ['jiraId', 'type', 'scope', 'subject']
   },
   releaseRules: [
     { type: 'docs', release: 'patch' },
@@ -38,24 +37,57 @@ module.exports = {
   writerOpts: {
     groupBy: 'type',
     noteGroupsSort: 'scope',
-    helpers: {
-      tlog: (ctx) => {
-        console.log('Handlebars log:', JSON.stringify(ctx, null, 2));
-        return '';
-      },
-      log: (ctx) => {
-        console.log('Handlebars log:', JSON.stringify(ctx, null, 2));
-        return '';
-      },
-      shortHash: (hash) => {
-        console.log(hash);
-        return hash?.substring(0, 7);
-      },
-      jiralink: (id) => {
-        console.log(id);
-        return `https://your-jira-url/browse/${id}`;
-      }
-    },
-    commitPartial: commitTemplate
+    commitPartial:
+      '*{{#if scope}} **{{scope}}:**\n' +
+      '{{~/if}} {{#if subject}}\n' +
+      '    {{~subject}}\n' +
+      '{{~else}}\n' +
+      '    {{~header}}\n' +
+      '{{~/if}}\n' +
+      '\n' +
+      '{{~!-- commit link --}}\n' +
+      '{{#if @root.linkReferences~}}\n' +
+      '    [{{shortHash}}](' +
+      '    {{~#if @root.repository}}\n' +
+      '        {{~#if @root.host}}{{@root.host}}/{{/if}}\n' +
+      '        {{~#if @root.owner}}{{@root.owner}}/{{/if}}\n' +
+      '        {{~@root.repository}}/commit/{{hash}}\n' +
+      '    {{~else}}\n' +
+      '        {{~@root.repoUrl}}/commit/{{hash}}\n' +
+      '    {{~/if}})\n' +
+      '{{~else}}\n' +
+      '    {{~shortHash}}\n' +
+      '{{~/if}}\n' +
+      '\n' +
+      '{{~!-- Jira link --}}\n' +
+      '{{#if jiraId}}\n' +
+      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
+      '{{/if}}\n' +
+      '\n' +
+      '{{ log this }}\n' +
+      '{{~!-- commit references --}}\n' +
+      '{{~#if references~}}\n' +
+      '    , closes\n' +
+      '    {{~#each references}} {{#if @root.linkReferences~}}\n' +
+      '        [\n' +
+      '        {{~#if this.owner}}{{this.owner}}/{{/if}}\n' +
+      '        {{this.repository}}#{{this.issue}}](' +
+      '        {{~#if @root.repository}}\n' +
+      '            {{~#if @root.host}}{{@root.host}}/{{/if}}\n' +
+      '            {{~#if this.repository}}\n' +
+      '                {{~#if this.owner}}{{this.owner}}/{{/if}}\n' +
+      '                {{this.repository}}\n' +
+      '            {{~else}}\n' +
+      '                {{~#if @root.owner}}{{@root.owner}}/{{/if}}\n' +
+      '                {{@root.repository}}\n' +
+      '            {{~/if}}\n' +
+      '        {{~else}}\n' +
+      '            {{@root.repoUrl}}\n' +
+      '        {{~/if}}/{{@root.issue}}/{{this.issue}})\n' +
+      '    {{~else}}\n' +
+      '        {{~#if this.owner}}{{this.owner}}/{{/if}}\n' +
+      '        {{this.repository}}#{{this.issue}}\n' +
+      '    {{~/if}}{{/each}}\n' +
+      '{{~/if}}\n'
   }
 }
