@@ -73,3 +73,4 @@
 ### feat: add test29 page styles
 ### feat: add test30 page styles
 ### feat: add test31 page styles
+### feat: add test32 page styles
