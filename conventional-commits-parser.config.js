@@ -48,28 +48,21 @@ module.exports = {
       '\n' +
       '{{~!-- commit link --}}\n' +
       '{{#if @root.linkReferences~}}\n' +
-      '       ([{{shortHash}}] short-hash (\n' +
+      '    [{{shortHash}}](' +
       '    {{~#if @root.repository}}\n' +
-      '        {{~#if @root.host}}\n' +
-      '            {{~@root.host}}/\n' +
-      '        {{~/if}}\n' +
-      '        {{~#if @root.owner}}\n' +
-      '            {{~@root.owner}}/\n' +
-      '        {{~/if}}\n' +
-      '        {{~@root.repository}}\n' +
+      '        {{~#if @root.host}}{{@root.host}}/{{/if}}\n' +
+      '        {{~#if @root.owner}}{{@root.owner}}/{{/if}}\n' +
+      '        {{~@root.repository}}/commit/{{hash}}\n' +
       '    {{~else}}\n' +
-      '        {{~@root.repoUrl}}\n' +
-      '    {{~/if}}/\n' +
-      '    {{~@root.commit}}/{{hash}} hash ))\n' +
+      '        {{~@root.repoUrl}}/commit/{{hash}}\n' +
+      '    {{~/if}})\n' +
       '{{~else}}\n' +
       '    {{~shortHash}}\n' +
       '{{~/if}}\n' +
       '\n' +
       '{{~!-- Jira link --}}\n' +
       '{{#if jiraId}}\n' +
-      '    ([{{ jiraId }}](' +
-      jiraUrl +
-      '{{ jiraId }})) test \n' +
+      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
       '{{/if}}\n' +
       '\n' +
       '{{~!-- commit references --}}\n' +
@@ -77,34 +70,23 @@ module.exports = {
       '    , closes\n' +
       '    {{~#each references}} {{#if @root.linkReferences~}}\n' +
       '        [\n' +
-      '        {{~#if this.owner}}\n' +
-      '            {{~this.owner}}/\n' +
-      '        {{~/if}}\n' +
-      '        {{~this.repository}}#{{this.issue}}](\n' +
+      '        {{~#if this.owner}}{{this.owner}}/{{/if}}\n' +
+      '        {{this.repository}}#{{this.issue}}](' +
       '        {{~#if @root.repository}}\n' +
-      '            {{~#if @root.host}}\n' +
-      '                {{~@root.host}}/\n' +
-      '            {{~/if}}\n' +
+      '            {{~#if @root.host}}{{@root.host}}/{{/if}}\n' +
       '            {{~#if this.repository}}\n' +
-      '                {{~#if this.owner}}\n' +
-      '                    {{~this.owner}}/\n' +
-      '                {{~/if}}\n' +
-      '                {{~this.repository}}\n' +
+      '                {{~#if this.owner}}{{this.owner}}/{{/if}}\n' +
+      '                {{this.repository}}\n' +
       '            {{~else}}\n' +
-      '                {{~#if @root.owner}}\n' +
-      '                    {{~@root.owner}}/\n' +
-      '                {{~/if}}\n' +
-      '                {{~@root.repository}}\n' +
+      '                {{~#if @root.owner}}{{@root.owner}}/{{/if}}\n' +
+      '                {{@root.repository}}\n' +
       '            {{~/if}}\n' +
       '        {{~else}}\n' +
-      '            {{~@root.repoUrl}}\n' +
-      '        {{~/if}}/\n' +
-      '        {{~@root.issue}}/{{this.issue}})\n' +
+      '            {{@root.repoUrl}}\n' +
+      '        {{~/if}}/{{@root.issue}}/{{this.issue}})\n' +
       '    {{~else}}\n' +
-      '        {{~#if this.owner}}\n' +
-      '            {{~this.owner}}/\n' +
-      '        {{~/if}}\n' +
-      '        {{~this.repository}}#{{this.issue}}\n' +
+      '        {{~#if this.owner}}{{this.owner}}/{{/if}}\n' +
+      '        {{this.repository}}#{{this.issue}}\n' +
       '    {{~/if}}{{/each}}\n' +
       '{{~/if}}\n'
   }
