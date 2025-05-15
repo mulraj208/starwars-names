@@ -38,20 +38,9 @@ module.exports = {
   writerOpts: {
     groupBy: 'type',
     noteGroupsSort: 'scope',
-    helpers: {
-      log: function (data) {
-        console.log('Handlebars log helper:', data);
-        return ''; // returns nothing to template
-      },
-      json: function (context) {
-        return JSON.stringify(context, null, 2);
-      }
-    },
     commitPartial:
       '*{{#if scope}} **{{scope}}:**\n' +
-      '{{log this}}\n' +
-      '{{log scope}}\n' +
-      '{{log @root}}\n' +
+      '{{shortHash}}\n' +
       '{{~/if}} {{#if subject}}\n' +
       '    {{~subject}}\n' +
       '{{~else}}\n' +
