@@ -2,6 +2,16 @@
 
 ## 0.0.0 (2025-05-15)
 
+* update commit template
+
+[](
+    https://github.com/
+    mulraj208/
+    starwars-names/commit/d7ce299
+)
+
+## 0.0.0 (2025-05-15)
+
 *use parserOpts
 
 [](
