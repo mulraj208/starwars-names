@@ -40,9 +40,9 @@ module.exports = {
     commitPartial:
       `*{{#if scope}} **{{scope}}:** {{~/if}} 
       {{#if subject}}
-          {{~subject}} 
+          {{~subject}}
       {{~else}}
-          {{~header}} 
+          {{~header}}
       {{~/if}}
       
       {{~!-- commit link --}}
