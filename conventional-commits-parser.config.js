@@ -63,7 +63,6 @@ module.exports = {
           ([{{ jiraId }}](${jiraUrl}{{ jiraId }}))
       {{/if}}
       
-      {{ log this }}
       {{~!-- commit references --}}
       {{~#if references~}}
           , closes
