@@ -47,7 +47,7 @@ module.exports = {
         console.log(hash);
         return hash?.substring(0, 7);
       },
-      jiraLink: (id) => {
+      jiralink: (id) => {
         console.log(id);
         return `https://your-jira-url/browse/${id}`;
       }
