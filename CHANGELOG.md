@@ -2,6 +2,11 @@
 
 ## 0.0.0 (2025-05-15)
 
+* 
+    comment out jira link
+
+## 0.0.0 (2025-05-15)
+
 * add helpers[](https://github.com/mulraj208/starwars-names/commit/e882904)    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
     ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
     ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
