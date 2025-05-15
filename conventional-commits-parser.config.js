@@ -47,14 +47,14 @@ module.exports = {
       
       {{~!-- commit link --}}
       {{#if @root.linkReferences~}}
-          [{{hash}}](
+          ([{{hash}}](
           {{~#if @root.repository}}
               {{~#if @root.host}}{{@root.host}}/{{/if}}
               {{~#if @root.owner}}{{@root.owner}}/{{/if}}
               {{~@root.repository}}/commit/{{hash}}
           {{~else}}
               {{~@root.repoUrl}}/commit/{{hash}}
-          {{~/if}})
+          {{~/if}})) 
       {{~else}}
           {{~hash}}
       {{~/if}}
