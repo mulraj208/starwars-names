@@ -78,6 +78,9 @@ module.exports = {
       '{{/if}}\n' +
       '\n' +
       '{{ shortHash }}\n' +
+      '{{ scope }}\n' +
+      '{{ this }}\n' +
+      '{{ @root }}\n' +
       '{{ jiraId }}\n' +
       '{{~!-- commit references --}}\n' +
       '{{~#if references~}}\n' +
