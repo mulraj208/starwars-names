@@ -4,7 +4,8 @@
     {{header}}
 {{~/if}}
 
-{{!-- commit link --}}
+{{!-- commit link
+
 {{#if @root.linkReferences}}
     [{{shortHash hash}}](
     {{#if @root.repository}}
@@ -17,6 +18,8 @@
 {{else}}
     {{shortHash hash}}
 {{/if}}
+
+--}}
 
 {{!-- Jira link --}}
 {{#if jiraId}}
