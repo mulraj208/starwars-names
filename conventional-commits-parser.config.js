@@ -29,7 +29,18 @@ module.exports = {
   },
   parserOpts: {
     headerPattern: /^([A-Z]+-\d+) (\w*)(?:\(([^)]*)\))?: (.*)$/,
-    headerCorrespondence: ['jiraId', 'type', 'scope', 'subject']
+    headerCorrespondence: ['jiraId', 'type', 'scope', 'subject'],
+    transform: (commit) => {
+      // Add shortHash from full hash
+      commit.shortHash = commit.hash?.substring(0, 7);
+
+      // Add jiraLinkUrl if jiraId exists
+      if (commit.jiraId) {
+        commit.jiraLinkUrl = `https://your-jira-url/browse/${commit.jiraId}`;
+      }
+
+      return commit;
+    }
   },
   releaseRules: [
     { type: 'docs', release: 'patch' },
@@ -42,12 +53,6 @@ module.exports = {
       log: (ctx) => {
         console.log('Handlebars log:', JSON.stringify(ctx, null, 2));
         return '';
-      },
-      shortHash: (hash) => {
-        return hash?.substring(0, 7);
-      },
-      jiraLink: (id) => {
-        return `https://your-jira-url/browse/${id}`;
       }
     },
     commitPartial: commitTemplate

@@ -1,45 +1,29 @@
-*{{#if scope}} **{{scope}}:**{{/if}} {{#if subject}}
-    {{subject}}
-{{~else}}
-    {{header}}
-{{~/if}}
+*{{#if scope}} **{{scope}}:** {{/if}}{{subject}}
 
-{{!-- commit link
-
-{{#if @root.linkReferences}}
-    [{{shortHash hash}}](
-    {{#if @root.repository}}
-        {{#if @root.host}}{{@root.host}}/{{/if}}
-        {{#if @root.owner}}{{@root.owner}}/{{/if}}
-        {{@root.repository}}/commit/{{hash}}
-    {{else}}
-        {{@root.repoUrl}}/commit/{{hash}}
-    {{/if}})
+[{{shortHash}}](
+{{#if @root.repository}}
+    {{#if @root.host}}{{@root.host}}/{{/if}}
+    {{#if @root.owner}}{{@root.owner}}/{{/if}}
+    {{@root.repository}}/commit/{{hash}}
 {{else}}
-    {{shortHash hash}}
+    {{@root.repoUrl}}/commit/{{hash}}
+{{/if}}
+)
+
+{{#if jiraLinkUrl}}
+    ({{jiraLinkUrl}})
 {{/if}}
 
---}}
-
-{{!-- Jira link
-
-{{#if jiraId}}
-    ([{{jiraId}}]({{jiraLink jiraId}}))
-{{/if}}
-
- --}}
-
-{{ jiraLink ../jiraId }}
-
-{{!-- commit references --}}
 {{#if references}}
     , closes
     {{#each references}}
         {{#if @root.linkReferences}}
             [
             {{#if this.owner}}{{this.owner}}/{{/if}}
-            {{this.repository}}#{{this.issue}}](
+            {{this.repository}}#{{this.issue}}
+            ](
             {{#if @root.repository}}
+                {{#if @root.host}}{{@root.host}}/{{/if}}
                 {{#if this.repository}}
                     {{#if this.owner}}{{this.owner}}/{{/if}}
                     {{this.repository}}
@@ -49,7 +33,8 @@
                 {{/if}}
             {{else}}
                 {{@root.repoUrl}}
-            {{/if}}/{{@root.issue}}/{{this.issue}})
+            {{/if}}/{{@root.issue}}/{{this.issue}}
+            )
         {{else}}
             {{#if this.owner}}{{this.owner}}/{{/if}}
             {{this.repository}}#{{this.issue}}
