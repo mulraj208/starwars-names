@@ -2,6 +2,13 @@
 
 ## 0.0.0 (2025-05-15)
 
+* add jira link[](https://github.com/mulraj208/starwars-names/commit/d269946)    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
+
+
+PKS-18
+
+## 0.0.0 (2025-05-15)
+
 * remove jira link[](https://github.com/mulraj208/starwars-names/commit/0b6b919)
 
 ## 0.0.0 (2025-05-15)
