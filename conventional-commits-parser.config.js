@@ -38,8 +38,7 @@ module.exports = {
     groupBy: 'type',
     noteGroupsSort: 'scope',
     commitPartial:
-      `*{{#if scope}} **{{scope}}:** {{~/if}} 
-      {{#if subject}}
+      `*{{#if scope}} **{{scope}}:** {{~/if}} {{#if subject}}
           {{~subject}}
       {{~else}}
           {{~header}}
