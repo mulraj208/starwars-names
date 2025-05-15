@@ -68,11 +68,6 @@ module.exports = {
       '    {{~shortHash}}\n' +
       '{{~/if}}\n' +
       '\n' +
-      '{{~!-- Jira link --}}\n' +
-      '{{#if jiraId}}\n' +
-      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
-      '{{/if}}\n' +
-      '\n' +
       '{{~!-- commit references --}}\n' +
       '{{~#if references~}}\n' +
       '    , closes\n' +
