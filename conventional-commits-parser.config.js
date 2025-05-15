@@ -64,6 +64,18 @@ module.exports = {
       '{{#if jiraId}}\n' +
       '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
       '{{/if}}\n' +
+      '{{~!-- Jira link --}}\n' +
+      '{{#if jiraId}}\n' +
+      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
+      '{{/if}}\n' +
+      '{{~!-- Jira link --}}\n' +
+      '{{#if jiraId}}\n' +
+      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
+      '{{/if}}\n' +
+      '{{~!-- Jira link --}}\n' +
+      '{{#if jiraId}}\n' +
+      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
+      '{{/if}}\n' +
       '\n' +
       '{{ shortHash }}\n' +
       '{{ jiraId }}\n' +
