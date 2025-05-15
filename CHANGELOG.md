@@ -7,6 +7,18 @@
 [](
     https://github.com/
     mulraj208/
+    starwars-names/commit/82e0a56
+)
+
+[object Object]/commit/82e0a56
+
+## 0.0.0 (2025-05-15)
+
+* update commit template
+
+[](
+    https://github.com/
+    mulraj208/
     starwars-names/commit/d7ce299
 )
 
