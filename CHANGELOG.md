@@ -2,6 +2,10 @@
 
 ## 0.0.0 (2025-05-15)
 
+* testing[](https://github.com/mulraj208/starwars-names/commit/8f9a8e9)    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
+
+## 0.0.0 (2025-05-15)
+
 * try logging[](https://github.com/mulraj208/starwars-names/commit/44d4232)    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
 
 ## 0.0.0 (2025-05-15)
