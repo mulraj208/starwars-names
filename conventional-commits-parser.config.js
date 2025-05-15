@@ -40,8 +40,14 @@ module.exports = {
     noteGroupsSort: 'scope',
     commitPartial:
       '*{{#if scope}} **{{scope}}:**\n' +
+      '{{#if jiraId}}\n' +
+      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
+      '{{/if}}\n' +
       '{{ shortHash }}\n' +
       '{{ jiraId }}\n' +
+      '{{#if jiraId}}\n' +
+      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
+      '{{/if}}\n' +
       '{{~/if}} {{#if subject}}\n' +
       '    {{~subject}}\n' +
       '{{~else}}\n' +
