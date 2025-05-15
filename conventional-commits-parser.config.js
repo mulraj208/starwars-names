@@ -1,7 +1,7 @@
 // Documentation for the options
 // https://github.com/release-it/conventional-changelog?tab=readme-ov-file#parseropts
-
-const jiraUrl = 'https://aiopsgroup.atlassian.net/browse/'
+const fs = require('fs');
+const commitTemplate = fs.readFileSync('commit.hbs').toString();
 
 module.exports = {
   preset: {
@@ -43,75 +43,11 @@ module.exports = {
         console.log('Handlebars log:', JSON.stringify(ctx, null, 2));
         return '';
       },
-      json: (ctx) => JSON.stringify(ctx, null, 2)
+      helpers: {
+        shortHash: (hash) => hash?.substring(0, 7),
+        jiraLink: (id) => `https://your-jira-url/browse/${id}`
+      }
     },
-    commitPartial:
-      '*{{#if scope}} **{{scope}}:**\n' +
-      '{{~/if}} {{#if subject}}\n' +
-      '    {{~subject}}\n' +
-      '{{~else}}\n' +
-      '    {{~header}}\n' +
-      '{{~/if}}\n' +
-      '\n' +
-      '{{~!-- commit link --}}\n' +
-      '{{#if @root.linkReferences~}}\n' +
-      '    [{{shortHash}}](' +
-      '    {{~#if @root.repository}}\n' +
-      '        {{~#if @root.host}}{{@root.host}}/{{/if}}\n' +
-      '        {{~#if @root.owner}}{{@root.owner}}/{{/if}}\n' +
-      '        {{~@root.repository}}/commit/{{hash}}\n' +
-      '    {{~else}}\n' +
-      '        {{~@root.repoUrl}}/commit/{{hash}}\n' +
-      '    {{~/if}})\n' +
-      '{{~else}}\n' +
-      '    {{~shortHash}}\n' +
-      '{{~/if}}\n' +
-      '\n' +
-      '{{~!-- Jira link --}}\n' +
-      '{{#if jiraId}}\n' +
-      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
-      '{{/if}}\n' +
-      '{{~!-- Jira link --}}\n' +
-      '{{#if jiraId}}\n' +
-      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
-      '{{/if}}\n' +
-      '{{~!-- Jira link --}}\n' +
-      '{{#if jiraId}}\n' +
-      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
-      '{{/if}}\n' +
-      '{{~!-- Jira link --}}\n' +
-      '{{#if jiraId}}\n' +
-      '    ([{{ jiraId }}](' + jiraUrl + '{{ jiraId }}))\n' +
-      '{{/if}}\n' +
-      '\n' +
-      '{{ shortHash }}\n' +
-      '{{ scope }}\n' +
-      '{{ log this }}\n' +
-      '{{ log @root }}\n' +
-      '{{ jiraId }}\n' +
-      '{{~!-- commit references --}}\n' +
-      '{{~#if references~}}\n' +
-      '    , closes\n' +
-      '    {{~#each references}} {{#if @root.linkReferences~}}\n' +
-      '        [\n' +
-      '        {{~#if this.owner}}{{this.owner}}/{{/if}}\n' +
-      '        {{this.repository}}#{{this.issue}}](' +
-      '        {{~#if @root.repository}}\n' +
-      '            {{~#if @root.host}}{{@root.host}}/{{/if}}\n' +
-      '            {{~#if this.repository}}\n' +
-      '                {{~#if this.owner}}{{this.owner}}/{{/if}}\n' +
-      '                {{this.repository}}\n' +
-      '            {{~else}}\n' +
-      '                {{~#if @root.owner}}{{@root.owner}}/{{/if}}\n' +
-      '                {{@root.repository}}\n' +
-      '            {{~/if}}\n' +
-      '        {{~else}}\n' +
-      '            {{@root.repoUrl}}\n' +
-      '        {{~/if}}/{{@root.issue}}/{{this.issue}})\n' +
-      '    {{~else}}\n' +
-      '        {{~#if this.owner}}{{this.owner}}/{{/if}}\n' +
-      '        {{this.repository}}#{{this.issue}}\n' +
-      '    {{~/if}}{{/each}}\n' +
-      '{{~/if}}\n'
+    commitPartial: commitTemplate
   }
 }
