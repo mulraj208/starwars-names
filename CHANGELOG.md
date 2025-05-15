@@ -2,6 +2,19 @@
 
 ## 0.0.0 (2025-05-15)
 
+* add multiple jira link[](https://github.com/mulraj208/starwars-names/commit/e83c2d4)    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
+    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
+    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
+    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
+
+
+
+[object Object]
+[object Object]
+PKS-18
+
+## 0.0.0 (2025-05-15)
+
 * add multiple jira link[](https://github.com/mulraj208/starwars-names/commit/ede460f)    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
     ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
     ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
