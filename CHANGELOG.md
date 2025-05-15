@@ -1,5 +1,9 @@
 
 
+## 0.0.0 (2025-05-15)
+
+* playing around[](https://github.com/mulraj208/starwars-names/commit/2673eb2)    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18))
+
 ## 0.0.0 (2025-05-13)
 
 * playing around([] short-hash (https://github.com/mulraj208/starwars-names/commit/40274fe hash ))    ([PKS-18](https://aiopsgroup.atlassian.net/browse/PKS-18)) test
