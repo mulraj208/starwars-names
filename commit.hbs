@@ -21,10 +21,15 @@
 
 --}}
 
-{{!-- Jira link --}}
+{{!-- Jira link
+
 {{#if jiraId}}
     ([{{jiraId}}]({{jiraLink jiraId}}))
 {{/if}}
+
+ --}}
+
+{{ log this }}
 
 {{!-- commit references --}}
 {{#if references}}
