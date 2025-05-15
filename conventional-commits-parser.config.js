@@ -38,6 +38,13 @@ module.exports = {
   writerOpts: {
     groupBy: 'type',
     noteGroupsSort: 'scope',
+    helpers: {
+      log: (ctx) => {
+        console.log('Handlebars log:', JSON.stringify(ctx, null, 2));
+        return '';
+      },
+      json: (ctx) => JSON.stringify(ctx, null, 2)
+    },
     commitPartial:
       '*{{#if scope}} **{{scope}}:**\n' +
       '{{~/if}} {{#if subject}}\n' +
@@ -79,8 +86,8 @@ module.exports = {
       '\n' +
       '{{ shortHash }}\n' +
       '{{ scope }}\n' +
-      '{{ this }}\n' +
-      '{{ @root }}\n' +
+      '{{ log this }}\n' +
+      '{{ log @root }}\n' +
       '{{ jiraId }}\n' +
       '{{~!-- commit references --}}\n' +
       '{{~#if references~}}\n' +
