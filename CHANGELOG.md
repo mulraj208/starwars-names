@@ -2,6 +2,10 @@
 
 ## 0.0.0 (2025-05-15)
 
+* use template string[07253ba](https://github.com/mulraj208/starwars-names/commit/07253ba)          ([PKS-20](https://aiopsgroup.atlassian.net/browse/PKS-20))
+
+## 0.0.0 (2025-05-15)
+
 * delete commit.hbs[](https://github.com/mulraj208/starwars-names/commit/9bd515e)    ([PKS-20](https://aiopsgroup.atlassian.net/browse/PKS-20))
 
 ## 0.0.0 (2025-05-15)
