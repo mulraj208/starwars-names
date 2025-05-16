@@ -36,7 +36,7 @@ module.exports = {
     '@release-it/conventional-changelog': {
       infile: 'CHANGELOG.md',
       preset: {
-        name: "angular"
+        name: "conventionalcommits"
       },
     }
   }
