@@ -1,3 +1,9 @@
+
+
+## 0.0.0 (2025-05-16)
+
+* add test 49 page styles([4860361](https://github.com/mulraj208/starwars-names/commit/4860361))          ([PKS-20](https://aiopsgroup.atlassian.net/browse/PKS-20))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
