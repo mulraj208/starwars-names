@@ -1,4 +1,10 @@
+# Changelog
 
+
+
+## 0.0.0 (2025-05-16)
+
+* add test 43 page styles([066f8fa](https://github.com/mulraj208/starwars-names/commit/066f8fa))          ([PKS-20](https://aiopsgroup.atlassian.net/browse/PKS-20))
 
 ## 0.0.0 (2025-05-16)
 
