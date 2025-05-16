@@ -1,16 +1,10 @@
 const conventionalCommitParserConfig = require('./conventional-commits-parser.config.js')
 
-// Documentation:
-// release-it configration
-// https://github.com/release-it/release-it/blob/main/docs/configuration.md
-
 module.exports = {
   git: {
-    tagName: '${version}',
-    // eslint-disable-next-line no-template-curly-in-string
+    tagName: 'v${version}',
     commitMessage: 'chore: release v${version} [ci skip]',
-    requireCleanWorkingDir: false,
-    changelog: false  // Disable default changelog generation
+    requireCleanWorkingDir: false
   },
   npm: false,
   preRelease: false,
@@ -42,6 +36,7 @@ module.exports = {
     '@release-it/conventional-changelog': {
       infile: 'CHANGELOG.md',
       ignoreRecommendedBump: true,
+      releaseCount: 0,
       ...conventionalCommitParserConfig
     }
   }
