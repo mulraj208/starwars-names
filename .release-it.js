@@ -35,9 +35,9 @@ module.exports = {
     },
     '@release-it/conventional-changelog': {
       infile: 'CHANGELOG.md',
-      ignoreRecommendedBump: true,
-      releaseCount: 0,
-      ...conventionalCommitParserConfig
+      preset: {
+        name: "angular"
+      },
     }
   }
 }
