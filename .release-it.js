@@ -2,6 +2,7 @@ const conventionalCommitParserConfig = require('./conventional-commits-parser.co
 
 module.exports = {
   git: {
+    tag: true,
     tagName: 'v${version}',
     commitMessage: 'chore: release v${version} [ci skip]',
     requireCleanWorkingDir: false
