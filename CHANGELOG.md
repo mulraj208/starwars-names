@@ -1,5 +1,7 @@
 
 
+## 0.0.1 (2025-05-16)
+
 ## 0.0.0 (2025-05-16)
 
 * add test 50 page styles([1005c2a](https://github.com/mulraj208/starwars-names/commit/1005c2a))          ([PKS-20](https://aiopsgroup.atlassian.net/browse/PKS-20))
