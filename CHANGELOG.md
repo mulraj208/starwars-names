@@ -2,6 +2,10 @@
 
 ## 0.0.0 (2025-05-16)
 
+* PKS-20 feat: add test 55 page styles ([461c0e2](https://github.com/mulraj208/starwars-names/commit/461c0e2))
+
+## 0.0.0 (2025-05-16)
+
 * PKS-20 feat: add test 53 page styles ([830249f](https://github.com/mulraj208/starwars-names/commit/830249f))
 
 ## 0.0.0 (2025-05-16)
