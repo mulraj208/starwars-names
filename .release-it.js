@@ -8,7 +8,8 @@ module.exports = {
   git: {
     // eslint-disable-next-line no-template-curly-in-string
     commitMessage: 'chore: release v${version} [ci skip]',
-    requireCleanWorkingDir: false
+    requireCleanWorkingDir: false,
+    changelog: true
   },
   npm: false,
   preRelease: false,
@@ -40,6 +41,7 @@ module.exports = {
     '@release-it/conventional-changelog': {
       infile: 'CHANGELOG.md',
       ignoreRecommendedBump: true,
+      header: '# Changelog\n\n',
       ...conventionalCommitParserConfig
     }
   }
