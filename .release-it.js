@@ -14,19 +14,10 @@ module.exports = {
   npm: false,
   preRelease: false,
   plugins: {
-    // IMPORTANT!
-    // Uncomment this plugin to use "CalVer" (yyyy.mm.dd.minor) as versioning
-    // or leave it commented to use "SemVer" (major.minor.patch)
     '@csmith/release-it-calver-plugin': {
-      // Documentation about version format:
-      // https://github.com/casmith/release-it-calver-plugin
-      // https://calver.org/
-      //
-      // NB: patch is not ignored (not working in this version)
-      // https://github.com/casmith/release-it-calver-plugin/issues/39
       format: 'yyyy.mm.dd.minor.patch',
-      increment: 'calendar',
-      date: new Date()
+      increment: 'calendar.minor.patch',
+      date: 'current'
     },
     '@release-it/bumper': {
       in: {
@@ -41,11 +32,24 @@ module.exports = {
     '@release-it/conventional-changelog': {
       infile: 'CHANGELOG.md',
       ignoreRecommendedBump: true,
-      sectionFormat: '## [${version}] - ${date}',
+      sectionFormat: '## [${version}]',
       releaseCount: 0,
       skipUnstable: false,
       header: '# Changelog\n\nAll notable changes to this project will be documented in this file.\n\n',
-      ...conventionalCommitParserConfig
+      preset: {
+        name: 'conventionalcommits',
+        types: [
+          { type: 'feat', section: 'Features' },
+          { type: 'fix', section: 'Bug Fixes' },
+          { type: 'perf', section: 'Performance Improvements' },
+          { type: 'refactor', section: 'Code Refactoring' },
+          { type: 'revert', section: 'Reverts' },
+          { type: 'docs', section: 'Documentation' },
+          { type: 'style', section: 'Styles' },
+          { type: 'chore', section: 'Chores' },
+          { type: 'test', section: 'Tests' }
+        ]
+      }
     }
   }
 }
