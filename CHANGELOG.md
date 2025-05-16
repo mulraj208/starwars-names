@@ -1,5 +1,9 @@
 
 
+## 0.0.0 (2025-05-16)
+
+* PKS-20 feat: update configuration ([6b822e0](https://github.com/mulraj208/starwars-names/commit/6b822e0))
+
 ## 0.0.1 (2025-05-16)
 
 ## 0.0.0 (2025-05-16)
