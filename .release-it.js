@@ -7,6 +7,12 @@ module.exports = {
     commitMessage: 'chore: release v${version} [ci skip]',
     requireCleanWorkingDir: false
   },
+  github: {
+    release: true,
+    releaseName: 'v${version}',
+    releaseNotes: 'CHANGELOG.md',
+    tagName: 'v${version}'
+  },
   npm: false,
   preRelease: false,
   plugins: {
