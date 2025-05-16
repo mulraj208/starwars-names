@@ -60,5 +60,8 @@
       "es2015",
       "stage-2"
     ]
+  },
+  "overrides": {
+    "conventional-changelog-conventionalcommits": "8.0.0"
   }
 }
