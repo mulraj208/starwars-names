@@ -9,7 +9,7 @@ module.exports = {
     // eslint-disable-next-line no-template-curly-in-string
     commitMessage: 'chore: release v${version} [ci skip]',
     requireCleanWorkingDir: false,
-    changelog: true
+    changelog: false  // Disable default changelog generation
   },
   npm: false,
   preRelease: false,
@@ -25,8 +25,8 @@ module.exports = {
       // NB: patch is not ignored (not working in this version)
       // https://github.com/casmith/release-it-calver-plugin/issues/39
       format: 'yyyy.mm.dd.minor.patch',
-      increment: 'calendar.minor.patch',
-      fallbackIncrement: 'calendar.minor'
+      increment: 'calendar',
+      date: new Date()
     },
     '@release-it/bumper': {
       in: {
@@ -41,7 +41,10 @@ module.exports = {
     '@release-it/conventional-changelog': {
       infile: 'CHANGELOG.md',
       ignoreRecommendedBump: true,
-      header: '# Changelog\n\n',
+      sectionFormat: '## [${version}] - ${date}',
+      releaseCount: 0,
+      skipUnstable: false,
+      header: '# Changelog\n\nAll notable changes to this project will be documented in this file.\n\n',
       ...conventionalCommitParserConfig
     }
   }
