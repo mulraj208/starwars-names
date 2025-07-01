@@ -1,5 +1,9 @@
 
 
+## <small>0.0.5 (2025-07-01)</small>
+
+* remove dry run([679be49](https://github.com/mulraj208/starwars-names/commit/679be49))          ([PKS-57](https://aiopsgroup.atlassian.net/browse/PKS-57))
+
 ## <small>0.0.4 (2025-07-01)</small>
 
 * add test 48 page styles([551a11e](https://github.com/mulraj208/starwars-names/commit/551a11e))          ([PKS-48](https://aiopsgroup.atlassian.net/browse/PKS-48))
