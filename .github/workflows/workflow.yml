@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '20.19.1'
+          fetch-depth: 0  # Ensures full history and tags are fetched
       - run: npm ci
       - run: npm test
 
