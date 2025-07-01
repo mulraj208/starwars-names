@@ -1,5 +1,13 @@
 
 
+## <small>0.0.4 (2025-07-01)</small>
+
+* add test 48 page styles([551a11e](https://github.com/mulraj208/starwars-names/commit/551a11e))          ([PKS-48](https://aiopsgroup.atlassian.net/browse/PKS-48))
+* add test 49 page styles([189ffc6](https://github.com/mulraj208/starwars-names/commit/189ffc6))          ([PKS-49](https://aiopsgroup.atlassian.net/browse/PKS-49))
+* add test 50 page styles([a3bd52f](https://github.com/mulraj208/starwars-names/commit/a3bd52f))          ([PKS-50](https://aiopsgroup.atlassian.net/browse/PKS-50))
+* add test 51 page styles([1aec112](https://github.com/mulraj208/starwars-names/commit/1aec112))          ([PKS-51](https://aiopsgroup.atlassian.net/browse/PKS-51))
+* ignore version bump([9fb5afb](https://github.com/mulraj208/starwars-names/commit/9fb5afb))          ([PKS-52](https://aiopsgroup.atlassian.net/browse/PKS-52))
+
 ## 0.0.3 (2025-07-01)
 
 ## <small>0.0.2 (2025-07-01)</small>
