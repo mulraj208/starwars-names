@@ -1,5 +1,10 @@
 name: CI
-on: push
+on:
+  push:
+    branches:
+      - main  # Only run this action when pushing to the 'main' branch
+      - release
+
 jobs:
   generate-changelog:
     runs-on: ubuntu-latest
