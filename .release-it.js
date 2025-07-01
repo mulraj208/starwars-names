@@ -16,17 +16,17 @@ module.exports = {
     // IMPORTANT!
     // Uncomment this plugin to use "CalVer" (yyyy.mm.dd.minor) as versioning
     // or leave it commented to use "SemVer" (major.minor.patch)
-    '@csmith/release-it-calver-plugin': {
-      // Documentation about version format:
-      // https://github.com/casmith/release-it-calver-plugin
-      // https://calver.org/
-      //
-      // NB: patch is not ignored (not working in this version)
-      // https://github.com/casmith/release-it-calver-plugin/issues/39
-      format: 'yyyy.mm.dd.minor.patch',
-      increment: 'calendar.minor.patch',
-      fallbackIncrement: 'calendar.minor'
-    },
+    // '@csmith/release-it-calver-plugin': {
+    //   // Documentation about version format:
+    //   // https://github.com/casmith/release-it-calver-plugin
+    //   // https://calver.org/
+    //   //
+    //   // NB: patch is not ignored (not working in this version)
+    //   // https://github.com/casmith/release-it-calver-plugin/issues/39
+    //   format: 'yyyy.mm.dd.minor.patch',
+    //   increment: 'calendar.minor.patch',
+    //   fallbackIncrement: 'calendar.minor'
+    // },
     '@release-it/bumper': {
       in: {
         file: 'package.json',
