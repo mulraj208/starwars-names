@@ -2,6 +2,10 @@
 
 ## 0.0.0 (2025-07-01)
 
+* add test 44 page styles([0b7ec5e](https://github.com/mulraj208/starwars-names/commit/0b7ec5e))          ([PKS-44](https://aiopsgroup.atlassian.net/browse/PKS-44))
+
+## 0.0.0 (2025-07-01)
+
 * add test 43 page styles([46f56ab](https://github.com/mulraj208/starwars-names/commit/46f56ab))          ([PKS-43](https://aiopsgroup.atlassian.net/browse/PKS-43))
 
 ## 0.0.0 (2025-07-01)
