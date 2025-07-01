@@ -1,4 +1,4 @@
-const conventionalCommitParserConfig = require('./conventional-commits-parser.config.js')
+// const conventionalCommitParserConfig = require('./conventional-commits-parser.config.js')
 
 // Documentation:
 // release-it configration
@@ -38,9 +38,10 @@ module.exports = {
       }
     },
     '@release-it/conventional-changelog': {
-      infile: 'CHANGELOG.md',
-      ignoreRecommendedBump: true,
-      ...conventionalCommitParserConfig
+      "preset": {
+        "name": "angular"
+      },
+      "infile": "CHANGELOG.md"
     }
   }
 }
