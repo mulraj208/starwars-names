@@ -2,6 +2,10 @@
 
 ## 0.0.0 (2025-07-01)
 
+* always create tags([3322a0a](https://github.com/mulraj208/starwars-names/commit/3322a0a))          ([PKS-21](https://aiopsgroup.atlassian.net/browse/PKS-21))
+
+## 0.0.0 (2025-07-01)
+
 * ensures full history and tags are fetched([0d6ad01](https://github.com/mulraj208/starwars-names/commit/0d6ad01))          ([PKS-21](https://aiopsgroup.atlassian.net/browse/PKS-21))
 
 ## 0.0.0 (2025-07-01)
