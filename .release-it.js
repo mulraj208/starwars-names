@@ -39,7 +39,7 @@ module.exports = {
     },
     '@release-it/conventional-changelog': {
       infile: 'CHANGELOG.md',
-      // ignoreRecommendedBump: true,
+      ignoreRecommendedBump: true,
       ...conventionalCommitParserConfig
     }
   }
