@@ -8,7 +8,7 @@
     "test": "mocha src/index.test.js --compilers js:babel-register",
     "semantic-release": "semantic-release",
     "commit": "git-cz",
-    "release": "HUSKY=0 npx release-it -VV"
+    "release": "HUSKY=0 npx release-it --always"
   },
   "config": {
     "commitizen": {
