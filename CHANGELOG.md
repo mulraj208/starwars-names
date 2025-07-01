@@ -1,5 +1,9 @@
 
 
+## <small>0.0.1 (2025-07-01)</small>
+
+* remove calendar versioning([5c229cc](https://github.com/mulraj208/starwars-names/commit/5c229cc))          ([PKS-45](https://aiopsgroup.atlassian.net/browse/PKS-45))
+
 ## 0.0.0 (2025-07-01)
 
 * add test 44 page styles([0b7ec5e](https://github.com/mulraj208/starwars-names/commit/0b7ec5e))          ([PKS-44](https://aiopsgroup.atlassian.net/browse/PKS-44))
