@@ -11,7 +11,7 @@ module.exports = {
     requireCleanWorkingDir: false
   },
   npm: false,
-  // preRelease: false,
+  preRelease: false,
   plugins: {
     // IMPORTANT!
     // Uncomment this plugin to use "CalVer" (yyyy.mm.dd.minor) as versioning
