@@ -1,5 +1,9 @@
 
 
+## <small>0.0.6 (2025-07-02)</small>
+
+* npm false([ba4d997](https://github.com/mulraj208/starwars-names/commit/ba4d997))          ([PKS-59](https://aiopsgroup.atlassian.net/browse/PKS-59))
+
 ## <small>0.0.5 (2025-07-01)</small>
 
 * remove dry run([679be49](https://github.com/mulraj208/starwars-names/commit/679be49))          ([PKS-57](https://aiopsgroup.atlassian.net/browse/PKS-57))
