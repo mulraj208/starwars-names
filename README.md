@@ -98,3 +98,4 @@
 ### chore: add test 57 page styles
 ### chore: add test 58 page styles
 ### feat: add test 59 page styles
+### feat: add test 60 page styles
