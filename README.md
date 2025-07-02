@@ -103,3 +103,4 @@
 ### feat: add test 62 page styles
 ### feat: add test 63 page styles
 ### fix: add bugfix 1
+### fix: add bugfix 2
