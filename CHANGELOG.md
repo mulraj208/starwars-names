@@ -1,4 +1,10 @@
+# Changelog
 
+## 0.0.7 (2025-07-02)
+
+### Miscellaneous Chores
+
+* remove the `dry-run` from release command([6177837](https://github.com/mulraj208/starwars-names/commit/61778371c69900c09347bedf5deb96ce309a347b))    ([PKS-68](https://aiopsgroup.atlassian.net/browse/PKS-68))
 
 ## <small>0.0.6 (2025-07-02)</small>
 
