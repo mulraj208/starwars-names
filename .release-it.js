@@ -10,7 +10,7 @@ module.exports = {
     commitMessage: 'chore: release v${version} [ci skip]',
     requireCleanWorkingDir: false
   },
-  // npm: false,
+  npm: false,
   // preRelease: false,
   plugins: {
     // IMPORTANT!
