@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.0.7](https://github.com/mulraj208/starwars-names/compare/0.0.6...0.0.7) (2025-07-02)
+
+### Features
+
+* add test 60 page styles([f9a92ae](https://github.com/mulraj208/starwars-names/commit/f9a92aedeccc6d9f627e88253ceb64f131b4b408))    ([PKS-60](https://aiopsgroup.atlassian.net/browse/PKS-60))
+* add test 61 page styles([b8ad19a](https://github.com/mulraj208/starwars-names/commit/b8ad19adfc3888c9e3d8e9a667815e5cf97a0596))    ([PKS-61](https://aiopsgroup.atlassian.net/browse/PKS-61))
+* add test 62 page styles([f660637](https://github.com/mulraj208/starwars-names/commit/f660637f0fe55a9832f81ff1225609720450b31c))    ([PKS-62](https://aiopsgroup.atlassian.net/browse/PKS-62))
+* add test 63 page styles([26cd0d4](https://github.com/mulraj208/starwars-names/commit/26cd0d4025e0ef53ed490bea2d23edc95ea9b97f))    ([PKS-63](https://aiopsgroup.atlassian.net/browse/PKS-63))
+
+### Bug Fixes
+
+* add bugfix 1([79b275c](https://github.com/mulraj208/starwars-names/commit/79b275c742eb6d3850d6969535c8e373bef4105a))    ([PKS-64](https://aiopsgroup.atlassian.net/browse/PKS-64))
+* add bugfix 2([d654d92](https://github.com/mulraj208/starwars-names/commit/d654d924ebd0d42c0e6ce5da3d50965b9e139140))    ([PKS-65](https://aiopsgroup.atlassian.net/browse/PKS-65))
+
+### Miscellaneous Chores
+
+* add test 57 page styles([973930a](https://github.com/mulraj208/starwars-names/commit/973930a35b58ac4503487738136e4d39f975b2a6))    ([PKS-57](https://aiopsgroup.atlassian.net/browse/PKS-57))
+* add test 58 page styles([9f45eae](https://github.com/mulraj208/starwars-names/commit/9f45eaea92ccd4e58ba00402e10ebf1953b8a21a))    ([PKS-58](https://aiopsgroup.atlassian.net/browse/PKS-58))
+* add test 59 page styles([fb6262b](https://github.com/mulraj208/starwars-names/commit/fb6262b7001fa36d4909f6860488f0eb94717d1c))    ([PKS-59](https://aiopsgroup.atlassian.net/browse/PKS-59))
+* add test 67 page styles([cc2ed8c](https://github.com/mulraj208/starwars-names/commit/cc2ed8cc4619be4abf53af402808921b0936c4b6))    ([PKS-67](https://aiopsgroup.atlassian.net/browse/PKS-67))
+* preRelease false([ee7669a](https://github.com/mulraj208/starwars-names/commit/ee7669aba9f8060d3ba006db6bc75c78a3453150))    ([PKS-59](https://aiopsgroup.atlassian.net/browse/PKS-59))
+* remove `--dry-run` attribute([2dc8807](https://github.com/mulraj208/starwars-names/commit/2dc8807be2233bf0c3fa5ade50ec99b8b9cb3c1f))    ([PKS-61](https://aiopsgroup.atlassian.net/browse/PKS-61))
+* remove `release-it-calver-plugin`([2249460](https://github.com/mulraj208/starwars-names/commit/2249460d340aaa5f90a954c988e947edf37ddfaf))    ([PKS-61](https://aiopsgroup.atlassian.net/browse/PKS-61))
+* remove the `dry-run` from release command([6177837](https://github.com/mulraj208/starwars-names/commit/61778371c69900c09347bedf5deb96ce309a347b))    ([PKS-68](https://aiopsgroup.atlassian.net/browse/PKS-68))
+* update packages([508c143](https://github.com/mulraj208/starwars-names/commit/508c14304847c89cce1fa20036736317202f7e83))    ([PKS-61](https://aiopsgroup.atlassian.net/browse/PKS-61))
+
 ## 0.0.7 (2025-07-02)
 
 ### Miscellaneous Chores
