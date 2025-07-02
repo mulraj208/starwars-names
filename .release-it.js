@@ -10,8 +10,8 @@ module.exports = {
     commitMessage: 'chore: release v${version} [ci skip]',
     requireCleanWorkingDir: false
   },
-  npm: false,
-  preRelease: false,
+  // npm: false,
+  // preRelease: false,
   plugins: {
     // IMPORTANT!
     // Uncomment this plugin to use "CalVer" (yyyy.mm.dd.minor) as versioning
