@@ -8,7 +8,9 @@ module.exports = {
   git: {
     // eslint-disable-next-line no-template-curly-in-string
     commitMessage: 'chore: release v${version} [ci skip]',
-    requireCleanWorkingDir: false
+    requireCleanWorkingDir: false,
+    "tag": true,
+    "push": true
   },
   npm: false,
   preRelease: false,
