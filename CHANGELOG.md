@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.6 (2025-07-11)
+
+### Features
+
+* add test 71 page styles([db6bcd6](https://github.com/mulraj208/starwars-names/commit/db6bcd626b514296bf4e50f9ad9e132e7739ca1a))    ([PKS-71](https://aiopsgroup.atlassian.net/browse/PKS-71))
+
 ## [0.0.7](https://github.com/mulraj208/starwars-names/compare/0.0.6...0.0.7) (2025-07-02)
 
 ### Features
