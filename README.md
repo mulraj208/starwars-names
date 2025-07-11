@@ -110,3 +110,4 @@
 ### fix: add bugfix 11
 ### fix: add bugfix 12
 ### feat: add test 69 page styles
+### feat: add test 70 page styles
