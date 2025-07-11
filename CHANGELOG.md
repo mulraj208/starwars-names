@@ -4,6 +4,12 @@
 
 ### Features
 
+* add test 74 page styles([34ad37d](https://github.com/mulraj208/starwars-names/commit/34ad37d8cf3ca8c8e083ece5149f0f88f1b7dd0e))    ([PKS-74](https://aiopsgroup.atlassian.net/browse/PKS-74))
+
+## 0.0.6 (2025-07-11)
+
+### Features
+
 * add test 73 page styles([e89e112](https://github.com/mulraj208/starwars-names/commit/e89e11222e10656bb5c39c260cab83337093245f))    ([PKS-73](https://aiopsgroup.atlassian.net/browse/PKS-73))
 
 ## 0.0.6 (2025-07-11)
