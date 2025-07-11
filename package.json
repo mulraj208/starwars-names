@@ -8,7 +8,7 @@
     "test": "mocha src/index.test.js --compilers js:babel-register",
     "semantic-release": "semantic-release",
     "commit": "git-cz",
-    "release": "release-it --ci --dry-run"
+    "release": "release-it"
   },
   "config": {
     "commitizen": {
