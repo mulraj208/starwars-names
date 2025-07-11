@@ -109,3 +109,4 @@
 ### chore: add test 68 page styles
 ### fix: add bugfix 11
 ### fix: add bugfix 12
+### feat: add test 69 page styles
