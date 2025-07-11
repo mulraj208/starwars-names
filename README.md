@@ -105,3 +105,4 @@
 ### fix: add bugfix 1
 ### fix: add bugfix 2
 ### chore: add test 67 page styles
+### chore: add test 67 page styles
