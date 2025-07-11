@@ -107,3 +107,4 @@
 ### chore: add test 67 page styles
 ### chore: add test 67 page styles
 ### chore: add test 68 page styles
+### fix: add bugfix 11
