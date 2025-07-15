@@ -26,9 +26,11 @@ class CalverPlugin extends Plugin {
     try {
       return calver.inc(this.getFormat(), latestVersion, this.getInc());
     } catch {
+      this.log.warn(`Failed to increment with "${this.getFormat()}", falling back to "${FALLBACK_INCREMENT}".`);
       try {
         return calver.inc(this.getFormat(), latestVersion, this.getFallbackInc());
       } catch {
+        this.log.error('Both primary and fallback increment failed. Returning latest version.');
         return latestVersion;
       }
     }
