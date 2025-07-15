@@ -130,3 +130,4 @@
 ### fix: add bugfix 91
 ### fix: add bugfix 92
 ### feat: add test 93 page styles
+### feat: add test 94 page styles
