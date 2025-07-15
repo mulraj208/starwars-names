@@ -124,3 +124,4 @@
 ### feat: add test 85 page styles
 ### feat: add test 86 page styles
 ### feat: add test 87 page styles
+### feat: add test 878 page styles
