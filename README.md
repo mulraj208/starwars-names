@@ -125,3 +125,4 @@
 ### feat: add test 86 page styles
 ### feat: add test 87 page styles
 ### feat: add test 878 page styles
+### fix: add bugfix 89
