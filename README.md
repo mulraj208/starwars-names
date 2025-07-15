@@ -140,3 +140,4 @@
 ### fix: add bugfix 102
 ### feat: add test 103 page styles
 ### feat: add test 104 page styles
+### feat: add test 106 page styles
