@@ -1,5 +1,21 @@
 # Changelog
 
+## [2025.7.15.3.0](https://github.com/mulraj208/starwars-names/compare/2025.7.15.2.0...2025.7.15.3.0) (2025-07-15)
+
+### Features
+
+* add test 95 page styles([587a5ab](https://github.com/mulraj208/starwars-names/commit/587a5ab54fb0dd6c4b1ca4d4f3aa536db449f350))    ([PKS-9](https://aiopsgroup.atlassian.net/browse/PKS-9))
+* add test 96 page styles([02be5a3](https://github.com/mulraj208/starwars-names/commit/02be5a3248838f5becac6fac2388c37bfc4b14b9))    ([PKS-96](https://aiopsgroup.atlassian.net/browse/PKS-96))
+
+### Bug Fixes
+
+* add bugfix 97([89b8556](https://github.com/mulraj208/starwars-names/commit/89b85563c64fcb4a2f66583ae248e55279acbe25))    ([PKS-97](https://aiopsgroup.atlassian.net/browse/PKS-97))
+* add bugfix 98([dbe332b](https://github.com/mulraj208/starwars-names/commit/dbe332b3888e4dd2a220b4ae20e977a9854ee836))    ([PKS-98](https://aiopsgroup.atlassian.net/browse/PKS-98))
+
+### Miscellaneous Chores
+
+* use `@mulrajgupta208/release-it-calver-plugin`([5c5fd75](https://github.com/mulraj208/starwars-names/commit/5c5fd7582b8a1302ee910988bde8a34e96c721f4))    ([PKS-99](https://aiopsgroup.atlassian.net/browse/PKS-99))
+
 ## [2025.7.15.2.0](https://github.com/mulraj208/starwars-names/compare/2025.7.15.1.0...2025.7.15.2.0) (2025-07-15)
 
 ### Features
