@@ -26,7 +26,7 @@ module.exports = {
       // NB: patch is not ignored (not working in this version)
       // https://github.com/casmith/release-it-calver-plugin/issues/39
       format: 'yyyy.mm.dd.minor.patch',
-      increment: 'calendar.minor.patch',
+      increment: 'calendar.minor',
       fallbackIncrement: 'calendar.minor'
     },
     '@release-it/bumper': {

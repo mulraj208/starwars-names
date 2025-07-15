@@ -23,10 +23,15 @@ class CalverPlugin extends Plugin {
 
   getIncrementedVersion(args) {
     const { latestVersion } = args || {};
+
+    this.log.warn(calver.inc('yyyy.mm.minor', '2021.1.0', 'calendar.minor'));
+
     try {
+      this.log.warn(calver.inc(this.getFormat(), latestVersion, this.getInc()));
       return calver.inc(this.getFormat(), latestVersion, this.getInc());
     } catch {
-      this.log.warn(`Failed to increment with "${this.getFormat()}", falling back to "${FALLBACK_INCREMENT}".`);
+      console.log(this.getFormat(), latestVersion, this.getInc());
+      this.log.warn(`Failed to increment with "${this.getFormat()}", falling back to "${this.getFallbackInc()}".`);
       try {
         return calver.inc(this.getFormat(), latestVersion, this.getFallbackInc());
       } catch {

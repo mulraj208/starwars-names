@@ -1,5 +1,117 @@
 # Changelog
 
+## [2025.7.15.0.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.7.15.0.0) (2025-07-15)
+
+### Features
+
+* add test 85 page styles([6528698](https://github.com/mulraj208/starwars-names/commit/65286983d32c7dd7b909a84b2c2d0ca2e47f5dcf))    ([PKS-85](https://aiopsgroup.atlassian.net/browse/PKS-85))
+* add test 86 page styles([c4af471](https://github.com/mulraj208/starwars-names/commit/c4af471c9ef1d1113400df0c1b2fb54755c34e3f))    ([PKS-86](https://aiopsgroup.atlassian.net/browse/PKS-86))
+* add test 87 page styles([409b1cc](https://github.com/mulraj208/starwars-names/commit/409b1cc29440b7a05c09022d378ecf47611be938))    ([PKS-87](https://aiopsgroup.atlassian.net/browse/PKS-87))
+* add test 88 page styles([5f070ef](https://github.com/mulraj208/starwars-names/commit/5f070ef470d6b9b0c2e1f7e9340d6f4ec1c5037d))    ([PKS-88](https://aiopsgroup.atlassian.net/browse/PKS-88))
+
+### Bug Fixes
+
+* add bugfix 83([4be5156](https://github.com/mulraj208/starwars-names/commit/4be51568bb44f750dd66e2e92f93224e44ec95d6))    ([PKS-83](https://aiopsgroup.atlassian.net/browse/PKS-83))
+* add bugfix 84([b3e2847](https://github.com/mulraj208/starwars-names/commit/b3e28476871af5667feacca5240a3670973b9b65))    ([PKS-84](https://aiopsgroup.atlassian.net/browse/PKS-84))
+* add bugfix 89([f6bbbdb](https://github.com/mulraj208/starwars-names/commit/f6bbbdb8bcc1a8b0df231ba6aa6e43fac5ee7529))    ([PKS-89](https://aiopsgroup.atlassian.net/browse/PKS-89))
+* add bugfix 90([f358659](https://github.com/mulraj208/starwars-names/commit/f35865955c00c202b118574524363a4ca2c090c9))    ([PKS-90](https://aiopsgroup.atlassian.net/browse/PKS-90))
+
+## [2025.7.15.0.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.7.15.0.0) (2025-07-15)
+
+### Features
+
+* add test 85 page styles([6528698](https://github.com/mulraj208/starwars-names/commit/65286983d32c7dd7b909a84b2c2d0ca2e47f5dcf))    ([PKS-85](https://aiopsgroup.atlassian.net/browse/PKS-85))
+* add test 86 page styles([c4af471](https://github.com/mulraj208/starwars-names/commit/c4af471c9ef1d1113400df0c1b2fb54755c34e3f))    ([PKS-86](https://aiopsgroup.atlassian.net/browse/PKS-86))
+* add test 87 page styles([409b1cc](https://github.com/mulraj208/starwars-names/commit/409b1cc29440b7a05c09022d378ecf47611be938))    ([PKS-87](https://aiopsgroup.atlassian.net/browse/PKS-87))
+* add test 88 page styles([5f070ef](https://github.com/mulraj208/starwars-names/commit/5f070ef470d6b9b0c2e1f7e9340d6f4ec1c5037d))    ([PKS-88](https://aiopsgroup.atlassian.net/browse/PKS-88))
+
+### Bug Fixes
+
+* add bugfix 83([4be5156](https://github.com/mulraj208/starwars-names/commit/4be51568bb44f750dd66e2e92f93224e44ec95d6))    ([PKS-83](https://aiopsgroup.atlassian.net/browse/PKS-83))
+* add bugfix 84([b3e2847](https://github.com/mulraj208/starwars-names/commit/b3e28476871af5667feacca5240a3670973b9b65))    ([PKS-84](https://aiopsgroup.atlassian.net/browse/PKS-84))
+* add bugfix 89([f6bbbdb](https://github.com/mulraj208/starwars-names/commit/f6bbbdb8bcc1a8b0df231ba6aa6e43fac5ee7529))    ([PKS-89](https://aiopsgroup.atlassian.net/browse/PKS-89))
+* add bugfix 90([f358659](https://github.com/mulraj208/starwars-names/commit/f35865955c00c202b118574524363a4ca2c090c9))    ([PKS-90](https://aiopsgroup.atlassian.net/browse/PKS-90))
+
+## [2025.7.15.0.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.7.15.0.0) (2025-07-15)
+
+### Features
+
+* add test 85 page styles([6528698](https://github.com/mulraj208/starwars-names/commit/65286983d32c7dd7b909a84b2c2d0ca2e47f5dcf))    ([PKS-85](https://aiopsgroup.atlassian.net/browse/PKS-85))
+* add test 86 page styles([c4af471](https://github.com/mulraj208/starwars-names/commit/c4af471c9ef1d1113400df0c1b2fb54755c34e3f))    ([PKS-86](https://aiopsgroup.atlassian.net/browse/PKS-86))
+* add test 87 page styles([409b1cc](https://github.com/mulraj208/starwars-names/commit/409b1cc29440b7a05c09022d378ecf47611be938))    ([PKS-87](https://aiopsgroup.atlassian.net/browse/PKS-87))
+* add test 88 page styles([5f070ef](https://github.com/mulraj208/starwars-names/commit/5f070ef470d6b9b0c2e1f7e9340d6f4ec1c5037d))    ([PKS-88](https://aiopsgroup.atlassian.net/browse/PKS-88))
+
+### Bug Fixes
+
+* add bugfix 83([4be5156](https://github.com/mulraj208/starwars-names/commit/4be51568bb44f750dd66e2e92f93224e44ec95d6))    ([PKS-83](https://aiopsgroup.atlassian.net/browse/PKS-83))
+* add bugfix 84([b3e2847](https://github.com/mulraj208/starwars-names/commit/b3e28476871af5667feacca5240a3670973b9b65))    ([PKS-84](https://aiopsgroup.atlassian.net/browse/PKS-84))
+* add bugfix 89([f6bbbdb](https://github.com/mulraj208/starwars-names/commit/f6bbbdb8bcc1a8b0df231ba6aa6e43fac5ee7529))    ([PKS-89](https://aiopsgroup.atlassian.net/browse/PKS-89))
+* add bugfix 90([f358659](https://github.com/mulraj208/starwars-names/commit/f35865955c00c202b118574524363a4ca2c090c9))    ([PKS-90](https://aiopsgroup.atlassian.net/browse/PKS-90))
+
+## [2025.07.15.0.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.07.15.0.0) (2025-07-15)
+
+### Features
+
+* add test 85 page styles([6528698](https://github.com/mulraj208/starwars-names/commit/65286983d32c7dd7b909a84b2c2d0ca2e47f5dcf))    ([PKS-85](https://aiopsgroup.atlassian.net/browse/PKS-85))
+* add test 86 page styles([c4af471](https://github.com/mulraj208/starwars-names/commit/c4af471c9ef1d1113400df0c1b2fb54755c34e3f))    ([PKS-86](https://aiopsgroup.atlassian.net/browse/PKS-86))
+* add test 87 page styles([409b1cc](https://github.com/mulraj208/starwars-names/commit/409b1cc29440b7a05c09022d378ecf47611be938))    ([PKS-87](https://aiopsgroup.atlassian.net/browse/PKS-87))
+* add test 88 page styles([5f070ef](https://github.com/mulraj208/starwars-names/commit/5f070ef470d6b9b0c2e1f7e9340d6f4ec1c5037d))    ([PKS-88](https://aiopsgroup.atlassian.net/browse/PKS-88))
+
+### Bug Fixes
+
+* add bugfix 83([4be5156](https://github.com/mulraj208/starwars-names/commit/4be51568bb44f750dd66e2e92f93224e44ec95d6))    ([PKS-83](https://aiopsgroup.atlassian.net/browse/PKS-83))
+* add bugfix 84([b3e2847](https://github.com/mulraj208/starwars-names/commit/b3e28476871af5667feacca5240a3670973b9b65))    ([PKS-84](https://aiopsgroup.atlassian.net/browse/PKS-84))
+* add bugfix 89([f6bbbdb](https://github.com/mulraj208/starwars-names/commit/f6bbbdb8bcc1a8b0df231ba6aa6e43fac5ee7529))    ([PKS-89](https://aiopsgroup.atlassian.net/browse/PKS-89))
+* add bugfix 90([f358659](https://github.com/mulraj208/starwars-names/commit/f35865955c00c202b118574524363a4ca2c090c9))    ([PKS-90](https://aiopsgroup.atlassian.net/browse/PKS-90))
+
+## [2025.07.15.0.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.07.15.0.0) (2025-07-15)
+
+### Features
+
+* add test 85 page styles([6528698](https://github.com/mulraj208/starwars-names/commit/65286983d32c7dd7b909a84b2c2d0ca2e47f5dcf))    ([PKS-85](https://aiopsgroup.atlassian.net/browse/PKS-85))
+* add test 86 page styles([c4af471](https://github.com/mulraj208/starwars-names/commit/c4af471c9ef1d1113400df0c1b2fb54755c34e3f))    ([PKS-86](https://aiopsgroup.atlassian.net/browse/PKS-86))
+* add test 87 page styles([409b1cc](https://github.com/mulraj208/starwars-names/commit/409b1cc29440b7a05c09022d378ecf47611be938))    ([PKS-87](https://aiopsgroup.atlassian.net/browse/PKS-87))
+* add test 88 page styles([5f070ef](https://github.com/mulraj208/starwars-names/commit/5f070ef470d6b9b0c2e1f7e9340d6f4ec1c5037d))    ([PKS-88](https://aiopsgroup.atlassian.net/browse/PKS-88))
+
+### Bug Fixes
+
+* add bugfix 83([4be5156](https://github.com/mulraj208/starwars-names/commit/4be51568bb44f750dd66e2e92f93224e44ec95d6))    ([PKS-83](https://aiopsgroup.atlassian.net/browse/PKS-83))
+* add bugfix 84([b3e2847](https://github.com/mulraj208/starwars-names/commit/b3e28476871af5667feacca5240a3670973b9b65))    ([PKS-84](https://aiopsgroup.atlassian.net/browse/PKS-84))
+* add bugfix 89([f6bbbdb](https://github.com/mulraj208/starwars-names/commit/f6bbbdb8bcc1a8b0df231ba6aa6e43fac5ee7529))    ([PKS-89](https://aiopsgroup.atlassian.net/browse/PKS-89))
+* add bugfix 90([f358659](https://github.com/mulraj208/starwars-names/commit/f35865955c00c202b118574524363a4ca2c090c9))    ([PKS-90](https://aiopsgroup.atlassian.net/browse/PKS-90))
+
+## [2025.07.15.0.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.07.15.0.0) (2025-07-15)
+
+### Features
+
+* add test 85 page styles([6528698](https://github.com/mulraj208/starwars-names/commit/65286983d32c7dd7b909a84b2c2d0ca2e47f5dcf))    ([PKS-85](https://aiopsgroup.atlassian.net/browse/PKS-85))
+* add test 86 page styles([c4af471](https://github.com/mulraj208/starwars-names/commit/c4af471c9ef1d1113400df0c1b2fb54755c34e3f))    ([PKS-86](https://aiopsgroup.atlassian.net/browse/PKS-86))
+* add test 87 page styles([409b1cc](https://github.com/mulraj208/starwars-names/commit/409b1cc29440b7a05c09022d378ecf47611be938))    ([PKS-87](https://aiopsgroup.atlassian.net/browse/PKS-87))
+* add test 88 page styles([5f070ef](https://github.com/mulraj208/starwars-names/commit/5f070ef470d6b9b0c2e1f7e9340d6f4ec1c5037d))    ([PKS-88](https://aiopsgroup.atlassian.net/browse/PKS-88))
+
+### Bug Fixes
+
+* add bugfix 83([4be5156](https://github.com/mulraj208/starwars-names/commit/4be51568bb44f750dd66e2e92f93224e44ec95d6))    ([PKS-83](https://aiopsgroup.atlassian.net/browse/PKS-83))
+* add bugfix 84([b3e2847](https://github.com/mulraj208/starwars-names/commit/b3e28476871af5667feacca5240a3670973b9b65))    ([PKS-84](https://aiopsgroup.atlassian.net/browse/PKS-84))
+* add bugfix 89([f6bbbdb](https://github.com/mulraj208/starwars-names/commit/f6bbbdb8bcc1a8b0df231ba6aa6e43fac5ee7529))    ([PKS-89](https://aiopsgroup.atlassian.net/browse/PKS-89))
+* add bugfix 90([f358659](https://github.com/mulraj208/starwars-names/commit/f35865955c00c202b118574524363a4ca2c090c9))    ([PKS-90](https://aiopsgroup.atlassian.net/browse/PKS-90))
+
+## [2025.07.15.0.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.07.15.0.0) (2025-07-15)
+
+### Features
+
+* add test 85 page styles([6528698](https://github.com/mulraj208/starwars-names/commit/65286983d32c7dd7b909a84b2c2d0ca2e47f5dcf))    ([PKS-85](https://aiopsgroup.atlassian.net/browse/PKS-85))
+* add test 86 page styles([c4af471](https://github.com/mulraj208/starwars-names/commit/c4af471c9ef1d1113400df0c1b2fb54755c34e3f))    ([PKS-86](https://aiopsgroup.atlassian.net/browse/PKS-86))
+* add test 87 page styles([409b1cc](https://github.com/mulraj208/starwars-names/commit/409b1cc29440b7a05c09022d378ecf47611be938))    ([PKS-87](https://aiopsgroup.atlassian.net/browse/PKS-87))
+* add test 88 page styles([5f070ef](https://github.com/mulraj208/starwars-names/commit/5f070ef470d6b9b0c2e1f7e9340d6f4ec1c5037d))    ([PKS-88](https://aiopsgroup.atlassian.net/browse/PKS-88))
+
+### Bug Fixes
+
+* add bugfix 83([4be5156](https://github.com/mulraj208/starwars-names/commit/4be51568bb44f750dd66e2e92f93224e44ec95d6))    ([PKS-83](https://aiopsgroup.atlassian.net/browse/PKS-83))
+* add bugfix 84([b3e2847](https://github.com/mulraj208/starwars-names/commit/b3e28476871af5667feacca5240a3670973b9b65))    ([PKS-84](https://aiopsgroup.atlassian.net/browse/PKS-84))
+* add bugfix 89([f6bbbdb](https://github.com/mulraj208/starwars-names/commit/f6bbbdb8bcc1a8b0df231ba6aa6e43fac5ee7529))    ([PKS-89](https://aiopsgroup.atlassian.net/browse/PKS-89))
+* add bugfix 90([f358659](https://github.com/mulraj208/starwars-names/commit/f35865955c00c202b118574524363a4ca2c090c9))    ([PKS-90](https://aiopsgroup.atlassian.net/browse/PKS-90))
+
 ## [2025.07.15.0.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.07.15.0.0) (2025-07-15)
 
 ### Features
