@@ -9,7 +9,7 @@ module.exports = {
     // eslint-disable-next-line no-template-curly-in-string
     commitMessage: 'chore: release v${version} [ci skip]',
     requireCleanWorkingDir: false,
-    changelogUrl: '${remoteRepository}/branches/compare/${version}%0D${previousVersion}',
+    compareUrlFormat: 'https://github.com/mulraj208/starwars-names/compare/${previousVersion}%0D${version}',
     "tag": true,
     "push": true
   },
