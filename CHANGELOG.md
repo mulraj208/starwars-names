@@ -1,5 +1,11 @@
 # Changelog
 
+## [2025.07.15.0.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.07.15.0.0) (2025-07-15)
+
+## [2025.07.15.0.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.07.15.0.0) (2025-07-15)
+
+## [2025.07.15.0.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.07.15.0.0) (2025-07-15)
+
 ## 0.0.6 (2025-07-11)
 
 ### Features

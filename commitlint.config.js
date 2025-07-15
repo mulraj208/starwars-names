@@ -4,6 +4,9 @@ const CZ_CONFIG = require('./.cz-config.js').CZ_CONFIG
 const conventionalCommitParserConfig = require('./conventional-commits-parser.config.js')
 
 module.exports = {
+  ignores: [
+    (commit) => commit.startsWith('chore: release v') && commit.includes('[ci skip]')
+  ],
   // OPTIONAL: './.cz-config.js'
   // './.cz-config.js' is not needed when `commitlint` is used alone without
   // `cz-conventional-changelog-for-jira` or `commitizen`.

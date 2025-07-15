@@ -1,6 +1,6 @@
 {
   "name": "starwars-names-cli",
-  "version": "0.0.6",
+  "version": "2025.07.15.0.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {
