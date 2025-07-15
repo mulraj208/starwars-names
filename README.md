@@ -132,3 +132,4 @@
 ### feat: add test 93 page styles
 ### feat: add test 94 page styles
 ### feat: add test 95 page styles
+### feat: add test 96 page styles
