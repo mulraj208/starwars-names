@@ -135,3 +135,4 @@
 ### feat: add test 96 page styles
 ### fix: add bugfix 97
 ### fix: add bugfix 98
+### fix: add bugfix 100
