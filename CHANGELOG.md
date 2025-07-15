@@ -1,5 +1,17 @@
 # Changelog
 
+## [2025.7.15.2.0](https://github.com/mulraj208/starwars-names/compare/2025.7.15.1.0...2025.7.15.2.0) (2025-07-15)
+
+### Features
+
+* add test 93 page styles([e72a756](https://github.com/mulraj208/starwars-names/commit/e72a756484b28da67eed50e54f9cd062225b567e))    ([PKS-93](https://aiopsgroup.atlassian.net/browse/PKS-93))
+* add test 94 page styles([cf3d3b9](https://github.com/mulraj208/starwars-names/commit/cf3d3b98bb48b9c23ee59e0733c656ff413dc54b))    ([PKS-94](https://aiopsgroup.atlassian.net/browse/PKS-94))
+
+### Bug Fixes
+
+* add bugfix 91([380def2](https://github.com/mulraj208/starwars-names/commit/380def2d3ae000481ef1869e56f2efead23f558d))    ([PKS-91](https://aiopsgroup.atlassian.net/browse/PKS-91))
+* add bugfix 92([d210f09](https://github.com/mulraj208/starwars-names/commit/d210f09528dedf904c8e49035f5f0063d80b776a))    ([PKS-92](https://aiopsgroup.atlassian.net/browse/PKS-92))
+
 ## [2025.7.15.1.0](https://github.com/mulraj208/starwars-names/compare/2025.07.15.0.0...2025.7.15.1.0) (2025-07-15)
 
 ### Features
