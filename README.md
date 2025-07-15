@@ -128,3 +128,4 @@
 ### fix: add bugfix 89
 ### fix: add bugfix 90
 ### fix: add bugfix 91
+### fix: add bugfix 92
