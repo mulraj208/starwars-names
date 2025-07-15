@@ -18,7 +18,8 @@ module.exports = {
     // IMPORTANT!
     // Uncomment this plugin to use "CalVer" (yyyy.mm.dd.minor) as versioning
     // or leave it commented to use "SemVer" (major.minor.patch)
-    './calver-plugin.js': {
+    // './calver-plugin.js': {
+    '@mulrajgupta208/release-it-calver-plugin': {
       // Documentation about version format:
       // https://github.com/casmith/release-it-calver-plugin
       // https://calver.org/
