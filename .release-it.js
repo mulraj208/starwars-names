@@ -9,6 +9,7 @@ module.exports = {
     // eslint-disable-next-line no-template-curly-in-string
     commitMessage: 'chore: release v${version} [ci skip]',
     requireCleanWorkingDir: false,
+    changelogUrl: '${remoteRepository}/branches/compare/${version}%0D${previousVersion}',
     "tag": true,
     "push": true
   },
