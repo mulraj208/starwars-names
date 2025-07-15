@@ -21,19 +21,31 @@ class CalverPlugin extends Plugin {
     return this.getContext().fallbackIncrement || FALLBACK_INCREMENT;
   }
 
-  getIncrementedVersion(args) {
-    const { latestVersion } = args || {};
+  /**
+   * Normalize version by stripping leading zeros from numeric parts
+   * Example: '2025.07.15.0.0' -> '2025.7.15.0.0'
+   */
+  normalizeVersion(version) {
+    if (!version) return version;
+    return version
+      .split('.')
+      .map((part) => String(Number(part))) // removes leading 0s
+      .join('.');
+  }
 
-    this.log.warn(calver.inc('yyyy.mm.minor', '2021.1.0', 'calendar.minor'));
+  getIncrementedVersion(args = {}) {
+    const { latestVersion } = args;
+    const format = this.getFormat();
+    const inc = this.getInc();
+    const fallbackInc = this.getFallbackInc();
+    const normalizedVersion = this.normalizeVersion(latestVersion);
 
     try {
-      this.log.warn(calver.inc(this.getFormat(), latestVersion, this.getInc()));
-      return calver.inc(this.getFormat(), latestVersion, this.getInc());
+      return calver.inc(format, normalizedVersion, inc);
     } catch {
-      console.log(this.getFormat(), latestVersion, this.getInc());
-      this.log.warn(`Failed to increment with "${this.getFormat()}", falling back to "${this.getFallbackInc()}".`);
+      this.log.warn(`Failed to increment with "${inc}", falling back to "${fallbackInc}".`);
       try {
-        return calver.inc(this.getFormat(), latestVersion, this.getFallbackInc());
+        return calver.inc(format, normalizedVersion, fallbackInc);
       } catch {
         this.log.error('Both primary and fallback increment failed. Returning latest version.');
         return latestVersion;
@@ -41,12 +53,12 @@ class CalverPlugin extends Plugin {
     }
   }
 
-  getIncrementedVersionCI() {
-    return this.getIncrementedVersion(...arguments);
+  getIncrementedVersionCI(...args) {
+    return this.getIncrementedVersion(...args);
   }
 
-  getIncrement() {
-    return this.getIncrementedVersion(...arguments);
+  getIncrement(...args) {
+    return this.getIncrementedVersion(...args);
   }
 }
 
