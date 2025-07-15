@@ -118,3 +118,4 @@
 ### feat: add test 78 page styles
 ### feat: add test 80 page styles
 ### feat: add test 81 page styles
+### fix: add bugfix 82
