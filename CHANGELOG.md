@@ -1,5 +1,11 @@
 # Changelog
 
+## [2025.7.16.0.0](https://github.com/mulraj208/starwars-names/compare/2025.7.15.5.0...2025.7.16.0.0) (2025-07-16)
+
+### Miscellaneous Chores
+
+* update changelog header([85e282c](https://github.com/mulraj208/starwars-names/commit/85e282cf281c8847f6ce1a2710b47fdf921979e4))    ([PKS-111](https://aiopsgroup.atlassian.net/browse/PKS-111))
+
 ## [2025.7.15.5.0](https://github.com/mulraj208/starwars-names/compare/2025.7.15.4.0...2025.7.15.5.0) (2025-07-15)
 
 ### Features
