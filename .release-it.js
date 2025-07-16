@@ -9,7 +9,7 @@ module.exports = {
     // eslint-disable-next-line no-template-curly-in-string
     commitMessage: 'chore: release v${version} [ci skip]',
     requireCleanWorkingDir: false,
-    changelog: "git log --pretty=format:\"* %s (%h)\" ${previousTag}%0D${latestTag}",
+    changelog: 'git log --pretty=format:"* %s by %an on %ad (%h)" ${previousTag}...${latestTag}',
     "tag": true,
     "push": true
   },
