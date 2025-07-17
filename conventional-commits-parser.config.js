@@ -38,6 +38,14 @@ module.exports = {
   writerOpts: {
     groupBy: 'type',
     noteGroupsSort: 'scope',
+    headerPartial: `
+      ## {{#if isPatch}}{{/if}} [{{version}}](
+        {{~#if @root.host}}{{@root.host}}/{{/if}}
+        {{~#if @root.owner}}{{@root.owner}}/{{/if}}
+        {{~#if @root.repository}}{{@root.repository}}{{/if}}/compare/{{previousTag}}...{{version}})
+      {{~#if title}} "{{title}}"{{/if}}{{#if date}} ({{date}}){{/if}}
+      {{#if isPatch}}{{/if}}
+    `,
     commitPartial:
       '*{{#if scope}} **{{scope}}:**\n' +
       '{{~/if}} {{#if subject}}\n' +
