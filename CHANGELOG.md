@@ -1,5 +1,12 @@
 # Changelog
 
+##  [0.0.0](https://github.com/mulraj208/starwars-names/compare/...0.0.0) (2025-07-17)
+      
+    
+### Miscellaneous Chores
+
+* add `headerPartial`([f53c221](https://github.com/mulraj208/starwars-names/commit/f53c2217d7d937f073e7d0999f7a4866c45880a1))    ([PKS-113](https://aiopsgroup.atlassian.net/browse/PKS-113))
+
 ## [2025.7.16.0.0](https://github.com/mulraj208/starwars-names/compare/2025.7.15.5.0...2025.7.16.0.0) (2025-07-16)
 
 ### Miscellaneous Chores
